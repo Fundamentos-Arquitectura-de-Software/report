@@ -1,0 +1,2320 @@
+<div align="center">
+
+<img alt="upc-logo" src="assets/upc_logo_200x200_jao73r.png" width="200"/><br>
+
+<h3>Universidad Peruana de Ciencias Aplicadas</h3>
+
+<strong>Facultad de Ingeniería</strong><br>
+<strong>Carrera: Ingeniería de Software</strong><br>
+
+<strong>Periodo: 202520 </strong><br>
+<strong>Codigo del curso: 1ASI0729</strong><br>
+<strong>Nombre del curso: Desarrollo de Aplicaciones Open Source</strong><br>
+<strong>NRC: 7357<br>
+
+<strong>Nombre del profesor: Rafael Oswaldo Castro Veramendi</strong><br>
+
+<br><strong>*Informe de Trabajo Final*</strong><br><br>
+
+<strong>Nombre del startup: SenseEat</strong><br>
+<strong>Nombre del producto: FreshSense</strong><br>
+
+
+
+### Relación de Integrantes
+
+| Apellidos y Nombres |   Código    |
+|:-------------------------------:|:---------:|
+|  Valverde Portuguez, Natalia Ximena  | u20231a816 |
+|  Tumi Oliden, Manuel Ignacio  |    u20241c134    |
+|  Vega Coronado, Fabricio Samir  |    u202317000    |
+|  Villanueva Andrade, Ysaac Ligorio   |    u20231c168    |
+|  Tuesta Marin, Romina Alejandra  |    U202211706   |
+
+<strong> Diciembre, 2025</strong><br>
+</div>
+
+# Project Report Collaboration Insights
+
+ ![Collaboration report](assets/report.PNG)
+
+# Registro de Versiones del Informe
+
+| Versión | Fecha      | Autor        | Descripción de modificación                   |
+|---------|------------|--------------|-----------------------------------------------|
+| 1.0     | 6/09/2025 | Romina Tuesta | Creación de la estructura inicial del reporte, cargó archivos y actualizó una rama|
+| 1.1| 7/09/2025| Fabricio Vega| Realizó todo el capitulo 1 y todo competidores|
+| 1.2| 7/09/2025| Romina Tuesta| Hizo el diseño de entrevista| |
+|1.3| 12/09/2025| Fabricio Vega| Realizó actualizaciones en el analisis competitivo, hizo parte de las user stories y epics|
+|1.4| 12/09/2025|Manuel Tumi|Realizó entrevistas|
+|1.5|12/09/2025|Romina Tuesta| Realizó user personas |
+|1.6|12/09/2025|Ysaac Villanueva| Realizó analisis de entrevistas, parte de user stories, epics, to be scenario mapping y product backlog|
+|1.7|13/09/2025|Manuel Tumi| Realizó actualizaciones en entrevistas, as is scenario map y journey map |
+|1.8|14/09/2025|Fabricio Vega| Realizó actualizó las user stories e impact map. Ademas, realizó el style guidelines|
+|1.9|14/09/2025|Ysaac Villanueva| Realizó actualizaciones en el product backlog y en el information architecture|
+|1.10|18/09/2025|Romina Tuesta| Actualizó el sprint backlog|
+|1.11|19/09/2025|Manuel Tumi| Realizó parte del class diagrams, class dictionary and database diagram. Además realizó actualizaciones del sprint 1 y registró entrevistas|
+|1.12|20/09/2025|Manuel Tumi| Realizó parte del class diagram, class dictionary y database diagram|
+|1.13|20/09/2025|Romina Tuesta| Añadió nuevas imagenes por sprint y update en sprint|
+|1.14|20/09/2025|Ysaac Villanueva| Realizó software configuration management, actualizó su perfil y actualizó el analisis de entrevista |
+|1.15|20/09/2025|Natalia Valverde| Añadió entrevistas, realizó parte del DDD y realizó diagramas para el landing page|
+|1.16|20/09/2025|Fabricio Vega|Añadió conclusiones, bibliografia y realizó el reporte de versiones|
+|1.17|20/09/2025|Todo el equipo| Realizó aportes en el landing page |
+|1.18|20/09/2025|Todo el equipo| Realizó el big event storming |
+|1.19|5/10/2025|Fabricio Vega| Realizó actualizaciones en el registro de versiones del informe| 
+|1.20|5/10/2025| Fabricio Vega | Orginizó el Sprint Planning 2 para proceder con la codificacion en la web | 
+|1.21|9/10/2025| Manuel Tumi | Mejoró el Class Diagram y el Database Diagram |
+|1.22|10/10/2025| Fabricio Vega | Terminó la documentación para el sprint 2 |
+|1.x|01/12/2025| Romina Tuesta | Terminó la documentación del sprint 4 |
+
+---
+
+## Contenido
+- [Student Outcome](#student-outcome)
+- [Capítulo I: Introducción](#capítulo-i-introducción)
+    - [1.1. Startup Profile](#11-startup-profile)
+        - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+        - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+    - [1.2. Solution Profile](#12-solution-profile)
+        - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+        - [1.2.2. Lean UX Process](#122-lean-ux-process)
+  - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+  - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+  - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+  - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+    - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
+    - [2.1. Competidores](#21-competidores)
+        - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+        - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+    - [2.2. Entrevistas](#22-entrevistas)
+        - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+        - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+        - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+    - [2.3. Needfinding](#23-needfinding)
+        - [2.3.1. User Personas](#231-user-personas)
+        - [2.3.2. User Task Matrix](#232-user-task-matrix)
+        - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+        - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+        - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
+    - [2.4. Ubiquitous Language](#24-ubiquitous-language)
+- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+    - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+    - [3.2. User Stories](#32-user-stories)
+    - [3.3. Impact Mapping](#33-impact-mapping)
+    - [3.4. Product Backlog](#34-product-backlog)
+- [Capítulo IV: Product Design](#capítulo-iv-product-design)
+    - [4.1. Style Guidelines](#41-style-guidelines)
+        - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
+        - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
+    - [4.2. Information Architecture](#42-information-architecture)
+        - [4.2.1. Organization Systems](#421-organization-systems)
+        - [4.2.2. Labeling Systems](#422-labeling-systems)
+        - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
+        - [4.2.4. Searching Systems](#424-searching-systems)
+        - [4.2.5. Navigation Systems](#425-navigation-systems)
+    - [4.3. Landing Page UI Design](#43-landing-page-ui-design)
+        - [4.3.1. Landing Page Wireframe](#431-landing-page-wireframe)
+        - [4.3.2. Landing Page Mock-up](#432-landing-page-mock-up)
+    - [4.4. Web Applications UX/UI Design](#44-web-applications-uxui-design)
+        - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
+        - [4.4.2. Web Applications Wireflow Diagrams](#442-web-applications-wireflow-diagrams)
+        - [4.4.2. Web Applications Mock-ups](#442-web-applications-mock-ups)
+        - [4.4.3. Web Applications User Flow Diagrams](#443-web-applications-user-flow-diagrams)
+    - [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
+    - [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
+        - [4.6.1. Software Architecture Context Diagram](#461-software-architecture-context-diagram)
+        - [4.6.2. Software Architecture Container Diagrams](#462-software-architecture-container-diagrams)
+        - [4.6.3. Software Architecture Components Diagrams](#463-software-architecture-components-diagrams)
+    - [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
+        - [4.7.1. Class Diagrams](#471-class-diagrams)
+        - [4.7.2. Class Dictionary](#472-class-dictionary)
+    - [4.8. Database Design](#48-database-design)
+        - [4.8.1. Database Diagram](#481-database-diagram)
+- [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
+    - [5.1. Software Configuration Management](#51-software-configuration-management)
+        - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
+        - [5.1.2. Source Code Management](#512-source-code-management)
+        - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
+        - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
+    - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
+    - [5.2.1. Sprint 1](#521-sprint-1)
+        - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
+        - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
+        - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
+        - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
+        - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
+        - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
+        - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
+        - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+        - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)          
+        - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+        - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)            
+        - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+        - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+        - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+        - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+        - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+    - [5.2.3. Sprint 3](#523-sprint-3)
+        - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+        - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+        - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+        - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+        - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+        - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+        - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+        - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+      - [5.2.4. Sprint 4](#524-sprint-4)
+          - [5.2.4.1. Sprint Planning 3](#5241-sprint-planning-4)
+          - [5.2.4.2. Aspect Leaders and Collaborators](#5242-aspect-leaders-and-collaborators)
+          - [5.2.4.3. Sprint Backlog 3](#5243-sprint-backlog-4)
+          - [5.2.4.4. Development Evidence for Sprint Review](#5244-development-evidence-for-sprint-review)
+          - [5.2.4.5. Execution Evidence for Sprint Review](#5245-execution-evidence-for-sprint-review)
+          - [5.2.4.6. Services Documentation Evidence for Sprint Review](#5246-services-documentation-evidence-for-sprint-review)
+          - [5.2.4.7. Software Deployment Evidence for Sprint Review](#5247-software-deployment-evidence-for-sprint-review)
+          - [5.2.4.8. Team Collaboration Insights during Sprint](#5248-team-collaboration-insights-during-sprint)
+
+    - [5.3. Validation Interviews](#53-validation-interviews)
+        - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+        - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+        - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+
+    - [5.4. Video About-the-Product](#54-video-about-the-product)
+
+---
+
+## Student Outcome
+
+El curso contribuye al cumplimiento del Student Outcome ABET:
+
+**ABET – EAC - Student Outcome 5**  
+**Criterio:** *Capacidad de comunicarse efectivamente con un rango de audiencias.*
+
+En el siguiente cuadro se describen las acciones realizadas y las conclusiones del grupo, que sustentan el logro del ABET – EAC - Student Outcome 5.
+
+---
+
+# 1. Comunicación oral efectiva
+
+| Criterio específico | Acciones realizadas | Conclusiones |
+|---|---|---|
+| *Comunica oralmente con efectividad a diferentes rangos de audiencia.* | **TB1:**<br>- *Pitch y defensa* del proyecto (3–5 min) ante profesor y jurado, adaptando lenguaje técnico/no técnico.<br>- *Demostración guiada* de la Landing y wireflow (navegación, beneficios, CTA), respondiendo preguntas en vivo.<br>- *Entrevistas a usuarios* (2 segmentos): apertura, preguntas, cierre y síntesis; tono accesible y empático.<br>- *Ceremonias ágiles* (planning, review, retro) con *roles rotativos de speaker*, agenda y timeboxing.<br><br>**TP1:**<br>- Presentación del *Sprint Backlog de FreshSense*, explicando User Stories, tareas y responsables.<br>- *Revisión de sprint* con demo en vivo (Registro alimentos, Inventario, Alertas), explicando decisiones técnicas.<br>- *Dailies ≤10 min* comunicando avances y próximos pasos con precisión.<br>- *Retro de Sprint 1* moderada por un integrante distinto, fomentando comunicación clara.<br><br>**TB2:**<br>- Presentación oral del Sprint 3 explicando avances de frontend (dashboard, ranking, historial, logros, voz) y backend (bounded contexts, integración Postman).<br>- Demo técnica del flujo completo: *login → dashboard → inventario → reportes → settings*.<br>- Explicación oral del Sprint Planning, Review y Retrospective con énfasis en mejoras del equipo.<br>- Sustentación de entrevistas de validación explicando metodología, segmentos, preguntas y hallazgos.<br>- Reuniones ágiles (daily, planning) comunicando avances con lenguaje técnico claro y orientado a objetivos. .<br><br>**TF1:** <br> Concluimos este trabajo final integrando los avances clave del frontend y backend en un flujo sólido y funcional, respaldado por pruebas y una arquitectura clara. La planificación ágil, las validaciones con usuarios y las reuniones técnicas guiaron cada ajuste, permitiendo que el proyecto creciera con propósito y coherencia hasta llegar a esta versión final. | **TB1:**<br>- Se evidenció claridad, ritmo y adaptación del mensaje a profesor, compañeros y usuarios.<br>- Las dudas fueron atendidas con argumentos y evidencias (capturas, wireflows, backlog).<br>- Mejoras: reforzar *storytelling* (problema → solución → impacto) y cierre con CTA + métricas.<br><br>**TP1:**<br>- Comunicación efectiva y coordinación fluida en la exposición del backlog y demo técnica.<br>- Capacidad de síntesis al explicar componentes de la aplicación (To-Do → In-Process → Done).<br>- Mejoras: fortalecer uso de métricas de sprint (tiempos estimados vs reales) y transiciones orales.<br><br>**TB2 – Sprint 3:**<br>- Mayor dominio técnico y claridad al explicar nuevas funcionalidades de backend y frontend.<br>- Organización narrativa más sólida: *objetivo → progreso → demo → hallazgos*.<br>- Respuestas más seguras, apoyadas en evidencias, commits y pruebas reales.<br>- Recomendación: optimizar tiempos de demo y mejorar la fluidez entre turnos del equipo. <br> <br> **TF1**: <br> Cerramos destacando un crecimiento notable en el dominio técnico y en la claridad para presentar las nuevas funcionalidades del backend y frontend. La estructura narrativa se consolidó en un recorrido ordenado —objetivo, progreso, demostración y hallazgos— reforzado por respuestas sustentadas en evidencia y pruebas reales. El equipo avanza con firmeza, y queda como sugerencia afinar los tiempos de demo y pulir la transición entre turnos para elevar aún más la cohesión en futuras presentaciones.|
+
+---
+
+# 2. Comunicación escrita efectiva
+
+| Criterio específico | Acciones realizadas | Conclusiones |
+|---|---|---|
+| *Comunica por escrito con efectividad a diferentes rangos de audiencia.* | **TB1:**<br>- Informe estructurado (Introducción → Elicitación → Especificación → Diseño → Implementación).<br>- *Ubiquitous Language* EN/ES y User Stories con criterios Gherkin.<br>- Diagramas (Mermaid: class/ER; wireflow/user flow) con pies de figura y texto alternativo.<br>- Guías de estilo (tipografía, colores, SEO/meta tags) y commits con Conventional Commits.<br>- Redacción y revisión cruzada con formato APA.<br><br>**TP1:**<br>- Documentación del Sprint Backlog en tabla Markdown (US, tareas T01–T13, responsables, estatus).<br>- Organización en Trello con colores por estado y descripciones claras.<br>- Registro de evidencias escritas (notas, comentarios y commits).<br>- Redacción de conclusiones técnicas integradas al informe del TP1.<br><br>**TB2:**<br>- Documentación completa del Sprint 3 (planning, backlog, commits, evidencias, entrevistas, heurísticas).<br>- Sprint Backlog 3 en Markdown con US, tareas, responsables y estatus actualizado.<br>- Registro escrito de commits usando convenciones: *feat, fix, update, integration.*<br>- Documentación del backend (endpoints, bounded contexts, evidencias Postman).<br>- Registro escrito de entrevistas de validación con hallazgos, preguntas y segmentos.<br>- Capturas del frontend con texto descriptivo y explicación funcional.<br>- Sección *Team Collaboration Insights* interpretando actividad en GitHub. <br> <br> **TF1**: Con este cierre dejamos consolidada toda la documentación del Sprint 4, reuniendo planificación, backlog, commits y evidencias técnicas. El backlog en Markdown, los endpoints del backend y las pruebas en swagger, mientras que el análisis de colaboración en GitHub permitió entender el pulso del trabajo conjunto. Un ciclo completo, trazado con precisión y listo para sostener el siguiente tramo del proyecto.| **TB1:**<br>- Documento coherente y escaneable para públicos técnico y no técnico.<br>- Criterios de aceptación y definiciones permiten trazabilidad completa.<br>- Mejoras: uniformizar estilos de tabla, agregar *resumen ejecutivo* y *abstract* en inglés.<br><br>**TP1:**<br>- La comunicación escrita permitió trazabilidad y claridad del sprint.<br>- Tableros y backlog organizados visualmente y consistentes.<br>- Se evidenció mejora en redacción técnica y documentación ágil.<br>- Recomendación: unificar formato de redacción en Trello y ampliar criterios de aceptación.<br><br>**TB2 – Sprint 3:**<br>- Mayor profundidad técnica y mejor estructura visual en la documentación escrita.<br>- Tablas y evidencias permiten seguimiento claro del avance.<br>- Redacción de entrevistas y heurísticas centrada en el usuario.<br>- Recomendación: incluir *resumen ejecutivo del sprint* y comparación breve entre Sprint 2 y 3. <br> <br> **TF1:** <br> Para el Sprint 4, el cierre refleja un documento más maduro y legible, capaz de conversar tanto con perfiles técnicos como con quienes solo buscan comprender el rumbo del proyecto. La trazabilidad se mantuvo firme gracias a criterios de aceptación claros y un backlog visualmente consistente, acompañado de una redacción técnica que sigue afinándose. Las evidencias, tablas y registros del equipo dejaron un mapa nítido del avance, mientras que las entrevistas y heurísticas conservaron el enfoque en las necesidades reales del usuario. Como horizonte de mejora quedan la unificación total de estilos y la incorporación de un resumen ejecutivo que sintetice el espíritu del sprint y su relación con los anteriores, permitiendo que el proyecto avance con una narrativa cada vez más cohesionada. |
+
+---
+
+# Capítulo I: Introducción
+## 1.1. Startup Profile
+### 1.1.1. Descripción de la Startup
+
+Sense Eat es una startup enfocada en el desarrollo de soluciones tecnológicas para reducir el desperdicio de alimentos en los hogares. A través de la innovación, busca generar un impacto positivo en el cuidado del medio ambiente y la economía familiar, facilitando un mejor control y gestión del inventario alimenticio.
+
+Nuestro producto principal, FreshSense, consiste en un dispositivo equipado con sensores que se coloca dentro del refrigerador para medir la temperatura, humedad y la concentración de gas etileno (indicador clave en el proceso de maduración y descomposición de frutas y verduras). Esta información es enviada a una aplicación web donde los usuarios pueden visualizar el estado de sus alimentos y recibir alertas anticipadas sobre su posible deterioro.
+
+El modelo del negocio de Sense Eat está basado en la venta directa del dispositivo sensor y una suscripción mensual que ofrece funciones premium, como análisis detallado del inventario alimenticio y sugerencias de recetas personalizadas basadas en los productos disponibles, promoviendo así un consumo más eficiente y reducción de desperdicios.
+    
+### 1.1.2. Perfiles de integrantes del equipo
+    
+
+|Miembro| Descripción |
+|:---------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| <img src="assets/foto_romina.jpeg" width="700"/> | Romina Tuesta Marin - u202211706  <br> Mi nombre es Romina, tengo 20 años y estudio ingeniería de software. Me considero una persona responsable, honesta y dispuesta a ayudar a quien lo necesite cuando trabajamos en grupo, tengo conocimiento en lenguajes de programación como Python, C++, etc. También manejo HTML, CSS y JavaScript y siempre intento aprender algo nuevo de forma autodidacta. |
+| Natalia Ximena Valverde Portuguez    ![natalia-valverde](assets/natalia-valverde.png)        | Estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Cuento con conocimientos de Marketing y estoy interesada en el UX Design y base de datos con sql. Experiencia en trabajos de creación de startups en el ámbito laboral, lo que fortalece mis capacidades tanto en trabajos grupales e individuales para las bases de un proyecto.   |   
+|![alt text](assets/foto1erCiclo_Fabricio.jpg) | Soy Fabricio Samir Vega Coronado - U202317000. Actualmente tengo 19 años y curso el sexto ciclo de Ingeniería de Software. Manejo lenguajes de programación como C++, HTML, Python y MySQL, que aplico en la resolución de problemas y desarrollo de proyectos. Me esfuerzo por combinar mis habilidades técnicas con una mentalidad orientada a la innovación, siempre buscando nuevas formas de mejorar y optimizar procesos. Mi objetivo es seguir creciendo en este campo, aportando soluciones que no solo sean funcionales, sino también creativas y bien fundamentadas.| 
+| ![alt text](assets/perfil-ysaac.png)| Soy Villanueva Andrade Ysaac Ligorio, tengo 20 años y actualmente curso el sexto ciclo de Ingeniería de Software. He adquirido experiencia en diversos lenguajes y tecnologías como C++, Python, Java, C#, HTML y MySQL, además del uso de servicios en la nube mediante Azure. Estas competencias me han permitido desarrollar proyectos académicos y personales donde aplico la programación para resolver problemas de manera eficiente. Mi enfoque combina la parte técnica con una mentalidad creativa e innovadora, buscando siempre optimizar procesos y proponer soluciones escalables. Aspiro a seguir fortaleciendo mi perfil profesional, aportando iniciativas que destaquen tanto por su solidez técnica como por su valor diferencia.| 
+| ![alt text](assets/perfil_Manuel.jpeg)| Soy Tumi Oliden Manuel Ignacio, tengo 26 años y curso el sexto ciclo de Ingeniería de Software. A lo largo de mi formación he trabajado con distintos lenguajes como C++, Java, C#, HTML y MySQL, que utilizo para el desarrollo de proyectos académicos y personales. Me considero una persona innovadora, con interés en proponer nuevas ideas y en mantener una comunicación constante con mi equipo para alcanzar objetivos comunes. Mi meta es seguir fortaleciendo mis capacidades y aportar soluciones que destaquen por ser prácticas, creativas y bien estructuradas.| 
+
+
+## 1.2. Solution Profile
+
+### 1.2.1. Antecedentes y problemática
+
+#### Las 5W's y 2H's
+
+#### What? (¿Qué?)
+El desperdicio de alimentos en hogares consiste en la pérdida o desecho de productos alimenticios que podrían ser consumidos, debido a su descomposición, mala gestión o desconocimiento del estado real.
+
+#### Why? (¿Por qué?)
+La falta de información precisa y oportuna sobre las condiciones reales dentro del refrigerador (temperatura, humedad, gas etileno) hace que los usuarios no puedan anticipar la descomposición de alimentos, resultando en desperdicio y pérdidas económicas.
+
+#### Where? (¿Dónde?)
+En la mayoría de los hogares, principalmente dentro de refrigeradores donde se almacenan frutas, verduras y otros productos perecederos.
+
+#### When? (¿Dónde?)
+El desperdicio ocurre frecuentemente cuando los alimentos permanecen almacenados por tiempos prolongados sin monitoreo adecuado, intensificándose en días o semanas, según el tipo de alimento.
+
+#### Who? (¿Quién?)
+Usuarios domésticos, principalmente familias, adultos jóvenes, y personas preocupadas por la economía y la sostenibilidad ambiental.
+
+#### How? (¿Cómo?)
+Por falta de monitoreo tecnológico que detecte condiciones que aceleran la maduración y deterioro, así como por ausencia de alertas personalizadas para consumir a tiempo.
+
+#### How much? (¿Cuánto?)
+Se estima que un tercio de los alimentos producidos se desperdician globalmente. En términos económicos, esto representa pérdidas significativas para los hogares, además de impactos ambientales como generación de residuos y emisiones contaminantes.
+
+##### 1.2.2.1. Lean UX Problem Statements
+
+ - Los usuarios desperdician alimentos porque no tienen información precisa ni anticipada sobre la descomposición de la comida almacenada en sus refrigeradores.
+ - La falta de una herramienta accesible que monitoree factores críticos como temperatura, humedad y gas etileno conduce a una gestión ineficiente del inventario alimenticio en hogares.
+ - Las personas pierden dinero y contribuyen al impacto ambiental negativo debido a estas ineficientes y falta de alertas preventivas.
+
+##### 1.2.2.2. Lean UX Assumptions
+#### Business Assumptions
+- Se asume que la implementación de FreshSense permitirá reducir significativamente el desperdicio alimentario en hogares, generando ahorro económico para los usuarios.
+
+- Se espera que al ofrecer análisis avanzado de inventario y recetas personalizadas mediante suscripción, se genera un flujo constante de ingresos recurrentes para la startup.
+
+- Se considera que el mercado doméstico está dispuesto a adoptar tecnología accesible para optimizar lagestión de alimentos, siendo un nicho rentable y escalable.
+
+- Se supone que la facilidad de uso e integración del dispositivo con el app fomentará una alta retención y satisfacción del cliente.
+#### User Assumptions
+- Se asume que los usuarios valoran recibir alertas tempranas sobre el est ado de sus alimentos para evitar pérdidas innecesarias.
+
+- Se espera que los usuarios quieran ahorrar dinero consumiendo alimentos antes de que se descompongan gracias a la información precisa del dispositivo.
+
+- Se considera que los usuarios usarán activamente la app web para monitorear el estado de su refrigerador y aprovecharán las recetas personalizadas para maximizar la utilización de sus ingredientes.
+
+- Se supone que la simplicidad y utilidad de la solución motivarán a los usuarios a recomendar FreshSense a otras personas preocupadas por reducir desperdicios.
+
+##### 1.2.2.3. Lean UX Hypothesis Statements
+
+- Creemos que ofrecer alertas anticipadas basadas en datos de temperatura, humedad y gas etileno ayudará a los usuarios a consumir sus alimentos antes de que se descompongan, reduciendo así el desperdicio de comida en sus hogares. Sabremos que esto es cierto cuando el porcentaje de alimentos reportados como consumidos antes de la fecha de alerta supere el 70% durante el primer mes de uso. 
+
+- Creemos que permitir el acceso a la aplicación web desde múltiples dispositivos (PC, tablet, móvil) facilitará que los usuarios monitoreen el estado de sus alimentos en cualquier momento y lugar, aumentando la interacción con la plataforma. Sabremos que esto es cierto cuando al menos el 50% de los usuarios activos inicien sesión desde dos o más tipos de dispositivos en la primera semana tras la adopción.
+
+- Creemos que agregar funciones premium como análisis detallado de inventario y recetas personalizadas incentivará a los usuarios a suscribirse y usar el sistema con mayor frecuencia. Sabremos que esto es cierto cuando al menos el 30% de los usuarios activos se suscriban al plan premium dentro de los tres primeros meses de uso.
+
+- Creemos que la inclusión de recetas personalizadas basadas en los alimentos disponibles en el refrigerador motivará a los usuarios a aprovechar mejor sus ingredientes y reducir el desperdicio. Sabremos que esto es cierto cuando al menos el 40% de los usuarios utilicen las recetas sugeridas al menos una vez por semana durante el primer mes de uso.
+
+##### 1.2.2.4. Lean UX Canvas
+![alt text](assets/LeanUXCanvas_FreshSense.jpg)
+
+## 1.3. Segmentos objetivo
+
+Para el proyecto FreshSense se han seleccionado dos segmentos principales de usuarios a los cuales la solución aporta un valor claro y adaptado a sus necesidades específicas:
+
+##Adultos jóvenes 
+ - Edad: 25 a 40 años
+ - Estilo de vida: Dinámico y ocupado.
+ - Uso de tecnología: Frecuente.
+ - Necesidad principal: Gestionar el inventario alimenticio de forma sencilla y eficiente sin dedicar mucho tiempo.
+ - Beneficios buscados: Alertas oportunas y recomendaciones para evitar desperdicios y optimizar el consumo.
+
+##Pequeños negocios o emprendedores de alimentos caseros
+ - Perfil: Personas que elaboran y venden alimentos desde casa.
+ - Necesidad principal: Controlar la frescura de sus productos para garantizar calidad y minimizar pérdidas.
+ - Beneficios buscados: Solución económica y accesible para monitorear productos perecederos y manejar inventario eficientemente.
+
+# Capítulo II: Requirements Elicitation & Analysis
+## 2.1. Competidores
+Conocer a los competidores es clave para identificar oportunidades y definir una estrategia efectiva para FreshSense. Este análisis considera tanto competidores directos, que ofrecen soluciones similares, como indirectos que abordan el problema del desperdicio alimentario desde otras perspectivas. Comprender sus fortalezas y debilidades permitirá posicionar mejor nuestra propuesta y diferenciarla en el mercado.
+
+### 2.1.1. Análisis competitivo
+![alt text](assets/AnalisisCompetitivo_FreshSense.png)
+![alt text](assets/FODA_FreshSense.png)
+
+El análisis competitivo realizado permite comprender con claridad el panorama actual del mercado y la posición que ocupa FreshSense frente a competidores relevantes como Orbisk, OneThird y Too Good To Go. Si bien cada actor tiene enfoques y modelos distintos, el valor diferencial de FreshSense radica en su enfoque específico para hogares con una solución tecnológica accesible, combinando hardware y app con un modelo freemium atractivo para el mercado objetivo.
+
+Además, este análisis enfatiza las fortalezas de FreshSense en innovación, precio y marketing educativo, pero también revela áreas de mejora y desafíos potenciales frente a competidores consolidados en segmentos industriales o de consumo masivo. Las oportunidades de crecimiento incluyen el aumento en la conciencia ambiental y las alianzas estratégicas que pueden amplificar su alcance.
+
+En conclusión, FreshSense tiene un posicionamiento sólido pero debe continuar innovando en experiencia de usuario y escalabilidad para consolidarse como líder en la categoría doméstica de control y reducción del desperdicio alimentario.
+### 2.1.2. Estrategias y tácticas frente a competidores
+
+FreshSense adoptará una estrategia centrada en diferenciarse por su enfoque específico en hogares, ofreciendo una solución accesible y fácil de usar para el control del desperdicio alimentario en refrigeradores domésticos. Para lograrlo, se aplicarán las siguientes tácticas:
+
+- Campañas de marketing digital y contenidos educativos para sensibilizar sobre el desperdicio alimentario y los beneficios de una gestión eficiente del inventario doméstico.
+- Ofrecer un hardware con precio competitivo y acceso gratuito a funciones básicas, incentivando la suscripción a planes premium que agreguen valor con análisis avanzados y recetas personalizadas.
+- En redes sociales, producción de contenido útil y atractivo, incluyendo recetas, consejos de conservación y testimonios, que fomenten la comunidad y el engagement.
+- Colaboraciones con supermercados, apps de recetas y plataformas de sostenibilidad para ampliar el alcance y la confianza en la marca.
+- Desarrollo continuo de la app para maximizar su intuición, usabilidad y valor agregado mediante notificaciones y alertas personalizadas.
+- Programas de soporte, encuestas de satisfacción y recompensas para fortalecer la lealtad y generar recomendaciones boca a boca.
+
+Estas estrategias buscan posicionar a FreshSense no solo como un producto tecnológico, sino como un aliado en la reducción del desperdicio de alimentos con impacto positivo en la economía y el medio ambiente de los hogares.
+
+## 2.2. Entrevistas
+### 2.2.1. Diseño de entrevistas
+
+## Segmento 1: 
+### Adultos jóvenes (25-40 años, dinámicos y ocupados)
+
+#### Hábitos y problemas
+
+1. ¿Qué tan seguido revisas el estado de tus alimentos en el refrigerador?
+
+2. ¿Has tenido que botar comida en la última semana o mes? ¿Qué alimentos suelen desperdiciarse más?
+
+3. ¿Qué sientes cuando tienes que desechar alimentos?
+
+4. ¿Cómo gestionas actualmente tu inventario alimenticio? (listas, memoria, apps, nada).
+
+5. ¿Qué dificultades encuentras al intentar consumir tus alimentos antes de que se malogren?
+
+#### Uso de tecnología
+
+6. ¿Qué aplicaciones o dispositivos usas en tu día a día para organizar tu vida (ejemplo: apps de compras, recordatorios, fitness, etc.)?
+   
+7. ¿Estarías dispuesto(a) a usar una app para monitorear tus alimentos? ¿Qué esperas que sea fácil o difícil en esa experiencia?
+
+#### Valor y disposición
+8. ¿Qué te motivaría a usar un sistema que te avise cuándo un alimento está por vencer o deteriorarse?
+   
+9. Si además de alertas recibieras recetas personalizadas con lo que tienes en el refrigerador, ¿lo encontrarías útil?
+    
+10. ¿Pagarías una suscripción mensual por este tipo de servicio? Si sí, ¿qué rango de precio considerarías razonable?
+
+
+## Segmento 2: 
+### Pequeños negocios / emprendedores de alimentos caseros
+
+#### Hábitos y problemas
+
+1. ¿Qué tipo de alimentos manejas en tu negocio y cuáles son más propensos a perderse o malograrse?
+
+2. ¿Con qué frecuencia enfrentas pérdidas por deterioro de productos?
+
+3. ¿Tienes actualmente un método para controlar la frescura de tus ingredientes (listas, hojas de Excel, memoria, otro)?
+
+#### Necesidades
+
+4. ¿Qué impacto tiene para tu negocio perder productos perecibles? (económico, reputación, tiempo, clientes).
+5. ¿Qué importancia le das a la calidad y frescura de los alimentos que vendes?
+6. ¿Qué tipo de alertas o reportes te gustaría recibir para mejorar tu control de inventario?
+
+#### Valor y disposición
+7. ¿Te resultaría útil tener un dispositivo que monitoree automáticamente el estado de los productos dentro de tu refrigerador?
+8. ¿Qué características serían imprescindibles para que confíes en este tipo de solución?
+9. ¿Pagarías por una herramienta que te ayude a reducir pérdidas y mantener la frescura? ¿Prefieres un pago único por el dispositivo o una suscripción mensual con funciones adicionales?
+10. Si el sistema pudiera darte estadísticas de consumo, desperdicio y hasta proyecciones de compras, ¿te serviría para tu negocio?
+
+
+### 2.2.2. Registro de entrevistas
+### Segmento #1: Adultos jóvenes (25-40 años, dinámicos y ocupados)
+
+| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 1                     | **Nombre:** Piero Tapia  <br> **Edad:** 26  <br> **Distrito:** Jesús María <br><br> **Resumen:** Piero Tapia, trabajador del sector salud, comentó que revisa el refrigerador un par de veces por semana, pero aun así suele botar embutidos y nuggets que no consume a tiempo. Su mayor preocupación es el impacto económico y la incomodidad de desperdiciar comida que otros podrían aprovechar. No utiliza ninguna aplicación ni listas, y reconoce que muchas veces termina comprando lo mismo y aburriéndose de su dieta. Cree que una aplicación le sería útil si cuenta con tutoriales accesibles en cualquier momento, alertas de alimentos por vencer y recetas que le ayuden a variar. Considera justo un costo entre 15 y 25 soles mensuales, similar a una plataforma de streaming, aunque advierte que las notificaciones excesivas podrían volverse molestas | ![Evidencia](assets/Entrevista%20Piero.jpg) <br> [📂 Ver entrevista](https://drive.google.com/file/d/1ds2HwtLlN2qdSDsHA3fB1maRVExLGLSn/view?usp=drive_link) |
+
+
+| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 2                     | **Nombre:** Alvaro Yagui  <br> **Edad:** 26  <br> **Distrito:** Jesús María <br><br> **Resumen:** Álvaro Yagui, dedicado al área de ventas, señaló que la falta de tiempo y el cansancio hacen que olvide cocinar lo que compra, lo que provoca que carnes, plátanos y paltas se malogren con frecuencia. Asocia estas pérdidas con frustración y descuido, pues implican desperdicio de dinero. No usa aplicaciones para control, salvo alarmas en el celular, pero reconoce que resulta tedioso. Valora la idea de una aplicación que facilite el registro de alimentos mediante voz o escáner, acompañada de notificaciones claras y recetas para combinar los ingredientes disponibles. Está dispuesto a pagar entre 15 y 20 soles mensuales, un rango que equipara al de una suscripción de Spotify | ![Evidencia](assets/Entrevista%20Yagui.jpg) <br> [📂 Ver entrevista](https://drive.google.com/file/d/1BW0g2O54GD13gXBsNcTrhmmlvwBqTeFc/view?usp=drive_link) |
+
+
+| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 3                     | **Nombre:** Gabriela Vasquez  <br> **Edad:** 25  <br> **Distrito:** Pueblo Libre <br><br> **Resumen:** Gabriela Vázquez, de 25 años, reconoció que suele revisar el refrigerador solo una vez por semana, lo que la lleva a olvidar alimentos y desperdiciar principalmente frutas y verduras. Este hábito le genera frustración y la sensación de estar perdiendo dinero. Aunque utiliza notas y calendario para organizarse, no aplica ninguna herramienta específica para gestionar la comida. Considera valiosa una aplicación siempre que sea intuitiva, atractiva y con recordatorios confiables, además de que le ofrezca recetas para aprovechar mejor lo que ya tiene. En cuanto al costo, ve razonable un plan grupal parecido al de Spotify, alrededor de 30 soles compartidos entre varias personas | ![Evidencia](assets/Entrevista%20Gabriela.jpg) <br> [📂 Ver entrevista](https://drive.google.com/file/d/1zAOWVJjCjoiuuvE4Mp8h9_h-m27QpLtD/view?usp=drive_link) |
+=======
+| Número de entrevista | Datos del entrevistado         | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 1  | **Nombre:** Piero Tapia  <br> **Edad:** 26  <br> **Distrito:** Jesús María <br><br> **Resumen:** Piero Tapia, trabajador del sector salud, comentó que revisa el refrigerador un par de veces por semana, pero aun así suele botar embutidos y nuggets que no consume a tiempo. Su mayor preocupación es el impacto económico y la incomodidad de desperdiciar comida que otros podrían aprovechar. No utiliza ninguna aplicación ni listas, y reconoce que muchas veces termina comprando lo mismo y aburriéndose de su dieta. Cree que una aplicación le sería útil si cuenta con tutoriales accesibles en cualquier momento, alertas de alimentos por vencer y recetas que le ayuden a variar. Considera justo un costo entre 15 y 25 soles mensuales, similar a una plataforma de streaming, aunque advierte que las notificaciones excesivas podrían volverse molestas | ![Evidencia](assets/Entrevista%20Piero.jpg) <br> [📂 Ver entrevista](https://drive.google.com/file/d/15M_YnFO5NuGaYNpKAQJbU-r_Xq8Rc27l/view?usp=drive_link) 0-5:36 |
+
+
+| Número de entrevista | Datos del entrevistado         | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 2  | **Nombre:** Alvaro Yagui  <br> **Edad:** 26  <br> **Distrito:** Jesús María <br><br> **Resumen:** Álvaro Yagui, dedicado al área de ventas, señaló que la falta de tiempo y el cansancio hacen que olvide cocinar lo que compra, lo que provoca que carnes, plátanos y paltas se malogren con frecuencia. Asocia estas pérdidas con frustración y descuido, pues implican desperdicio de dinero. No usa aplicaciones para control, salvo alarmas en el celular, pero reconoce que resulta tedioso. Valora la idea de una aplicación que facilite el registro de alimentos mediante voz o escáner, acompañada de notificaciones claras y recetas para combinar los ingredientes disponibles. Está dispuesto a pagar entre 15 y 20 soles mensuales, un rango que equipara al de una suscripción de Spotify | ![Evidencia](assets/Entrevista%20Yagui.jpg) <br> [📂 Ver entrevista](https://drive.google.com/file/d/15M_YnFO5NuGaYNpKAQJbU-r_Xq8Rc27l/view?usp=drive_link) 5:36-13:41|
+
+
+| Número de entrevista | Datos del entrevistado         | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 3  | **Nombre:** Gabriela Vasquez  <br> **Edad:** 25  <br> **Distrito:** Pueblo Libre <br><br> **Resumen:** Gabriela Vázquez, de 25 años, reconoció que suele revisar el refrigerador solo una vez por semana, lo que la lleva a olvidar alimentos y desperdiciar principalmente frutas y verduras. Este hábito le genera frustración y la sensación de estar perdiendo dinero. Aunque utiliza notas y calendario para organizarse, no aplica ninguna herramienta específica para gestionar la comida. Considera valiosa una aplicación siempre que sea intuitiva, atractiva y con recordatorios confiables, además de que le ofrezca recetas para aprovechar mejor lo que ya tiene. En cuanto al costo, ve razonable un plan grupal parecido al de Spotify, alrededor de 30 soles compartidos entre varias personas | ![Evidencia](assets/Entrevista%20Gabriela.jpg) <br> [📂 Ver entrevista](https://drive.google.com/file/d/15M_YnFO5NuGaYNpKAQJbU-r_Xq8Rc27l/view?usp=drive_link) 13:41-19:37|
+
+### Segmento #2: Pequeños negocios / emprendedores de alimentos caseros
+
+| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 4                     | **Nombre:** Gladys Portuguez  <br> **Edad:** 52  <br> **Distrito:** San Miguel <br><br> **Resumen:** Gladys Portuguez, de 52 años, es ingeniera pero los fines de semana apoya en el negocio familiar de su mamá, donde vende almuerzos, maneja carnes, pollo, verduras y hierbas, siendo estas últimas las que más rápido se malogran. Enfrentan pérdidas casi todas las semanas porque no siempre logran vender toda la comida preparada o se malogra algún producto. El control de insumos lo hacen de memoria o con apuntes en una libreta, pero de forma muy básica. Las pérdidas afectan lo económico y también desmotivan, ya que representan tiempo y esfuerzo invertidos por su mamá. Le gustaría recibir alertas sobre ingredientes próximos a vencer y reportes simples. Un dispositivo de monitoreo le parecería útil, siempre que sea sencillo y accesible. Prefiere un pago único, ya que una suscripción mensual sería difícil de sostener. | ![Evidencia](assets/gladysentrevista.png) <br> [📂 Ver entrevista](https://drive.google.com/file/d/1VoBsv7UTEX4_Ua8-vo3c35dbRjkm4LNL/view?usp=sharing) |
+
+| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 5                     | **Nombre:** Vanessa Choy  <br> **Edad:** 25  <br> **Distrito:** Jesús María <br><br> **Resumen:** Vanessa, de 25 años, es estudiante de universidad que vende frutos secos como almendras, maní, pasas, pecanas y castañas en la universidad o en la tienda donde trabaja para apoyar en los gastos de estudios que paga su familia. Su mayor problema son las pecanas y castañas, que se rancean si no se almacenan bien. Las pérdidas ocurren cada dos o tres meses, pero son significativas porque compra al por mayor. No utiliza un sistema formal de control, solo su memoria y la revisión de fechas de empaque. Para ella, las pérdidas tienen un impacto directamente económico. Considera que la frescura es clave porque los clientes notan el sabor. Necesita reportes de stock, alertas de fechas de vencimiento y proyecciones de compras. Preferiría pagar una suscripción mensual baja que le permita acceder a datos y mejoras continuas. | ![Evidencia](assets/vanessaentrevista.png) <br> [📂 Ver entrevista](https://drive.google.com/file/d/1UBoZEcKPDIVcUzKSkt4w-yln-wWn0l9i/view?usp=sharing) |
+
+| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 6                     | **Nombre:** Rosa Ramos  <br> **Edad:** 42  <br> **Distrito:** Los Olivos <br><br> **Resumen:** Rosa  es contadora, pero también tiene un emprendimiento chico de repostería, trabaja con insumos como frutas, cremas, mantequilla y huevos, siendo las frutas frescas y la crema chantilly los productos más propensos a malograrse. Sufre pérdidas ocasionales, aproximadamente una vez al mes, principalmente por un mal cálculo en los pedidos. Su control lo hace con listas en papel o Excel, pero en la práctica se basa en la memoria. La pérdida de insumos impacta tanto en lo económico como en la reputación, ya que puede retrasar la entrega de pedidos. Para ella, la calidad y frescura son esenciales. Le gustaría recibir alertas de caducidad y reportes de consumo semanal. Estaría interesada en un dispositivo que monitoree automáticamente la frescura, siempre que sea confiable y fácil de usar. Prefiere un pago único, aunque consideraría una suscripción si le brinda estadísticas y proyecciones claras. | ![Evidencia](assets/rosaentrevista.png) <br> [📂 Ver entrevista](https://drive.google.com/file/d/1ZBnveO6upuwIr5oPsgGWY2OWCySCvm2o/view?usp=sharing) |
+
+### 2.2.3. Análisis de entrevistas
+### Segmento #1: Adultos jóvenes (25-40 años, dinámicos y ocupados)
+---
+### Hallazgos :
+## 👨 Piero Tapia
+
+Revisa su refrigerador dos veces por semana, pero desecha embutidos y nuggets. Percibe el desperdicio como un problema económico y también ético/social, pues otros podrían aprovechar la comida. No utiliza apps ni listas, y menciona aburrimiento por consumir lo mismo cada semana.
+
+**Puntos clave:**
+- Valora el impacto **económico, ambiental y social** de reducir desperdicios.  
+- Necesita un **tutorial claro y repetible** dentro de la app.  
+- Ve las **recetas como un “gancho”** para mantenerse en la plataforma.  
+- Estima justo pagar entre **15 y 25 soles mensuales**, similar a un servicio de streaming.  
+- Advierte sobre **notificaciones excesivas**, por lo que se requieren alertas inteligentes.  
+
+
+## 👨 Álvaro Yagui
+
+Lleva un estilo de vida ocupado y reconoce que carnes, plátanos y paltas suelen malograrse porque olvida cocinarlos. Siente frustración y descuido al desperdiciar dinero. No usa apps de control, solo alarmas, que considera tediosas.
+
+**Puntos clave:**
+- El problema está ligado a la **falta de tiempo y energía**.  
+- Sugiere un **registro automatizado** (voz o escáner con IA).  
+- Interés en **recetas que eviten la monotonía**.  
+- Dispuesto a pagar entre **15 y 20 soles mensuales**, comparable a Spotify.  
+
+## 👩 Gabriela Vázquez (25 años)
+
+Revisa el refrigerador solo una vez por semana, lo que ocasiona que olvide alimentos y termine botando principalmente frutas y verduras. Esto le genera frustración y sensación de pérdida económica. Se organiza con notas y calendario, pero no con herramientas específicas para alimentos.
+
+**Puntos clave:**
+- Necesita **alertas tempranas** sobre alimentos por vencer.  
+- Busca una aplicación **intuitiva y atractiva** en su diseño.  
+- Le interesan **recetas personalizadas** para aprovechar ingredientes.  
+- Estaría dispuesta a pagar bajo un modelo **familiar** (~30 soles compartidos, estilo Spotify).  
+---
+### Segmento #2: Pequeños negocios / emprendedores de alimentos caseros
+---  
+### Hallazgos :  
+---
+## 👩 Gladys Portuguez (52 años)  
+
+Ingeniera que los fines de semana apoya en el negocio familiar de almuerzos. Manejan carnes, pollo, verduras y hierbas, siendo estas últimas las que más rápido se malogran. Enfrentan pérdidas casi todas las semanas porque no siempre logran vender toda la comida preparada o se malogra algún producto. El control de insumos lo hacen de memoria o con apuntes en una libreta, de forma muy básica. Las pérdidas afectan lo económico y también desmotivan, ya que representan tiempo y esfuerzo invertidos por su mamá. Le gustaría recibir alertas sobre ingredientes próximos a vencer y reportes simples. Un dispositivo de monitoreo le parecería útil, siempre que sea sencillo y accesible. Prefiere un pago único, ya que una suscripción mensual sería difícil de sostener.  
+
+**Puntos clave:**  
+- Control actual **manual y básico**, sin herramientas tecnológicas.  
+- Pérdidas **frecuentes y desmotivadoras**, tanto en lo económico como en lo emocional.  
+- Necesita **alertas sencillas y reportes claros**.  
+- Prefiere **pago único** en lugar de suscripción.  
+
+
+## 👩 Vanessa Choy (25 años)  
+
+Estudiante universitaria que vende frutos secos (almendras, maní, pasas, pecanas, castañas) en la universidad y en la tienda donde trabaja para apoyar en los gastos de estudios que paga su familia. Su mayor problema son las pecanas y castañas, que se rancean si no se almacenan bien. Las pérdidas ocurren cada dos o tres meses, pero son significativas porque compra al por mayor. No utiliza un sistema formal de control, solo su memoria y la revisión de fechas de empaque. Para ella, las pérdidas tienen un impacto directamente económico. Considera que la frescura es clave porque los clientes notan el sabor. Necesita reportes de stock, alertas de fechas de vencimiento y proyecciones de compras. Preferiría pagar una suscripción mensual baja que le permita acceder a datos y mejoras continuas.  
+
+**Puntos clave:**  
+- Pérdidas **espaciadas pero significativas** por compras al por mayor.  
+- Importancia de la **frescura como valor de venta**.  
+- Requiere **reportes de stock, alertas y proyecciones**.  
+- Dispuesta a un **modelo de suscripción económica**.  
+
+
+## 👩 Rosa Ramos (42 años)  
+
+Contadora con un emprendimiento chico de repostería. Trabaja con insumos como frutas, cremas, mantequilla y huevos, siendo las frutas frescas y la crema chantilly los productos más propensos a malograrse. Sufre pérdidas ocasionales, aproximadamente una vez al mes, principalmente por un mal cálculo en los pedidos. Su control lo hace con listas en papel o Excel, pero en la práctica se basa en la memoria. La pérdida de insumos impacta tanto en lo económico como en la reputación, ya que puede retrasar la entrega de pedidos. Para ella, la calidad y frescura son esenciales. Le gustaría recibir alertas de caducidad y reportes de consumo semanal. Estaría interesada en un dispositivo que monitoree automáticamente la frescura, siempre que sea confiable y fácil de usar. Prefiere un pago único, aunque consideraría una suscripción si le brinda estadísticas y proyecciones claras.  
+
+**Puntos clave:**  
+- Pérdidas **mensuales por mala planificación**.  
+- Control con **papel/Excel poco eficiente**.  
+- Necesita **alertas de caducidad y reportes de consumo**.  
+- Interés en un **dispositivo confiable y simple**.  
+- Preferencia por **pago único**, aunque abierta a suscripción con valor agregado.  
+## 2.3. Needfinding
+### 2.3.1. User Personas
+
+#### SEGMENTO 1: Adultos jóvenes
+<img alt="User Person1" src="assets/José_userP1.png" width="600"/><br>
+
+### SEGMENTO 2: Pequeños negocios / emprendedores de alimentos caseros
+<img alt="User Person2" src="assets/Luisa_userP2.png" width="600"/><br>
+### 2.3.2. User Task Matrix
+![alt text](assets/UserMatrix_Open.jpg)
+Las tareas más frecuentes para los perfiles de usuario en FreshSense muestran claras diferencias según el rol y las necesidades de cada segmento.
+
+José Jiménez, como adulto joven con poco tiempo libre, usa la aplicación principalmente para consultar el estado de sus alimentos y recibir alertas de vencimiento, funciones que considera muy importantes para evitar pérdidas y ahorrar dinero. Además, interactúa ocasionalmente con las recetas sugeridas para variar su dieta y con la función de compartir logros en redes sociales, aunque estas últimas no son prioritarias en su experiencia.
+
+En contraste, Luisa Pérez, como emprendedora de alimentos caseros, enfoca su uso en el control detallado del inventario y en la revisión de reportes y proyecciones de compra, funciones que tienen gran importancia para asegurar la calidad de sus productos y reducir mermas en su negocio. Aunque consulta recetas con poca frecuencia, valora más la gestión manual del inventario y los reportes para planificar mejor la producción.
+### 2.3.3. User Journey Mapping
+Segmento 1:
+
+Mediante este artefacto se explicará y comprenderá cómo los usuarios del segmento 1 realizan sus actividades para gestionar sus alimentos y evitar desperdicios desde su propia perspectiva. Este segmento representa a personas con un estilo de vida dinámico, que suelen olvidar revisar con frecuencia su refrigerador y terminan desechando productos en mal estado. Valoran soluciones tecnológicas simples y rápidas que les permitan recibir alertas oportunas, optimizar el consumo mediante recetas prácticas y tener un mayor control de su inventario sin invertir tiempo adicional.
+![alt text](assets/Jose_Segmento1_Map.png)
+
+Segmento 2: 
+
+Mediante este artefacto se explicará y comprenderá cómo los usuarios del segmento 2 realizan sus actividades para mantener el control de sus insumos y asegurar la frescura de los productos que ofrecen a sus clientes. Este segmento representa a pequeños negocios que trabajan desde casa y enfrentan pérdidas económicas por caducidad de insumos debido a la gestión manual. Valoran herramientas que automaticen el monitoreo de la frescura, brinden reportes y proyecciones de compra, y contribuyan a mantener la calidad y la confianza de sus clientes, garantizando así la sostenibilidad de su negocio.
+![alt text](assets/Luisa_Segmento2_Map.png)
+
+### 2.3.4. Empathy Mapping
+Segmento 1:
+
+El mapa de empatía de José muestra a un profesional joven y ocupado que busca automatizar el control de sus alimentos para ahorrar tiempo y dinero. Se siente frustrado al desperdiciar comida sin darse cuenta y valora soluciones tecnológicas simples que le permitan optimizar sus compras y hábitos de consumo.
+![alt text](assets/Empathymap_Segmento1.png)
+
+Segmento 2:
+
+El mapa de empatía de Luisa refleja a una emprendedora responsable que necesita mantener la frescura de sus insumos para garantizar la calidad de sus productos. Busca una herramienta accesible y práctica que reduzca pérdidas económicas, la ayude a organizar su inventario y refuerce la confianza de sus clientes.
+![alt text](assets/Empathymap_Segmento2.png)
+### 2.3.5. As-is Scenario Mapping
+Segmento 1:
+
+Mediante este artefacto, se ha realizado la elaboración del As-is Scenario Mapping para el primer segmento (Adultos jóvenes). Este escenario refleja cómo los usuarios con un estilo de vida ocupado gestionan actualmente sus alimentos, dependiendo en gran medida de la memoria o revisiones esporádicas del refrigerador. Se evidencian las dificultades que enfrentan al olvidar productos, los gastos innecesarios por alimentos desperdiciados y la frustración al no contar con un sistema que los apoye en la organización. Asimismo, se muestran las percepciones y emociones que experimentan en cada etapa de su recorrido, desde la compra hasta el descarte de los productos.
+![alt text](assets/Segmento1_AsIs_Open.png)
+
+Segmento 2:
+
+Mediante este artefacto, se ha llevado a cabo la elaboración del As-is Scenario Mapping para el segundo segmento (Emprendedores de alimentos caseros). Este escenario refleja cómo los usuarios que producen y venden alimentos gestionan sus insumos de manera manual, utilizando cuadernos o archivos de Excel para llevar el control de su inventario. Se identifican las dificultades que enfrentan por pérdidas de productos caducados, la incertidumbre al no contar con alertas oportunas y el impacto económico negativo en su negocio. Asimismo, se destacan las percepciones y emociones que surgen en cada etapa, como el estrés por la gestión manual, la preocupación por mantener la calidad y la satisfacción de los clientes, y la presión constante de evitar pérdidas que afectan sus ingresos.
+![alt text](assets/Segmento2_AsIs_Open.png)
+
+## 2.4. Big Picture EventStorming
+
+En este espacio veremos la lluvia de ideas que tuvo el grupo para poder llegar a una solución estructurada:
+
+![event storming1](assets/Event1.PNG)
+![event storming2](assets/Event2.PNG)
+![event storming3](assets/Event3.PNG)
+![event storming4](assets/Event4.PNG)
+![event storming5](assets/Event5.jpeg)
+
+## 2.5. Ubiquitous Language
+
+| Ubiquos Term          | Definition of Functional Domain                                                         | 
+|-----------------------|-----------------------------------------------------------------------------------------|
+| Food Waste            | Loss or discard of edible food that could have been consumed, caused by poor management, lack of monitoring, or premature spoilage. |
+| FreshSense Device     | Sensor-based hardware placed inside the refrigerator to monitor food conditions such as temperature, humidity, and ethylene gas levels.|
+| Ethylene Gas          | Natural plant hormone released by fruits and vegetables during ripening. In FreshSense, ethylene gas is considered an indicator of freshness: high levels mean food is ripening faster and may spoil soon. |
+| Food Inventory        | List and status of available food items stored at home or in small businesses, including expiration estimation. |
+| Food Condition        | Current state of stored food measured by FreshSense (fresh, at risk, or spoiled). |
+| Expiration Alert      | Notification sent to users when a food item is approaching spoilage or expiration. |
+| Recipe Suggestion     | Cooking recommendation generated by the app based on ingredients close to expiration. |
+| Consumption Report    | Weekly or monthly summary of food consumed, discarded, and saved, showing economic and environmental impact. |
+| Premium Subscription  | Paid plan offering advanced features such as detailed inventory analysis, personalized recipes, and environmental statistics. |
+| Household User        | Individual or family that uses FreshSense at home to manage their food and reduce waste. |
+| Food Entrepreneur     | Small business owner or person who sells homemade food and uses FreshSense to guarantee freshness and reduce losses. |
+| Sustainability Impact | Positive effect of reducing food waste, measured in terms of money saved, CO₂ emissions avoided, and responsible consumption. |
+| Gamification          | Use of challenges, badges, and achievements within the app to motivate users to reduce waste. |
+| Food Monitoring      | Continuous tracking of storage conditions and freshness status of food. |
+| Smart Notification   | Alert system customized to user preferences, avoiding excessive or irrelevant reminders. |
+| Recipe Filter       | User option to search recipes by difficulty, time, or dietary preference. |
+
+# Capítulo III: Requirements Specification
+## 3.1. To-Be Scenario Mapping
+### Segmento #1 : Adultos jóvenes
+![alt text](assets/ToBe_Scenario_Seg1.jpeg)
+### Segmento #2 : Pequeños negocios / emprendedores de alimentos caseros
+![alt text](assets/ToBe_Scenario_Seg2.jpeg)
+## 3.2. User Stories
+
+| Epic / User Story ID | Título       | Descripción | Criterios de Aceptación  | Relacionado con (Epic ID) |
+|---------------------|---------------------------------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| US01  | Visualización propuesta| Como visitante adulto joven, quiero entender rápidamente la propuesta de FreshSense para valorar su utilidad. | **Escenario 1: Página carga correctamente** <br> Dado que un visitante accede al sitio <br> Cuando la landing page carga <br> Entonces el visitante ve el mensaje principal y el valor de la solución claramente.        | EP01 |
+| US02  | Sección para pequeños negocios  | Como visitante emprendedor, quiero información dedicada para sentirme identificado y entender beneficios. | **Escenario 1: Sección visible** <br> Dado que un emprendedor accede a la landing page <br> Cuando navega por la página <br> Entonces ve secciones y beneficios específicos para su perfil.     | EP01 |
+| US03  | Formulario de contacto | Como visitante, quiero un formulario simple para solicitar información o demo fácilmente.    | **Escenario 1: Formulario accesible** <br> Dado que un visitante quiere contactar <br> Cuando accede a la sección de contacto <br> Entonces puede enviar un formulario con datos válidos.        | EP01 |
+| US04  | CTA para suscripción| Como visitante interesado, quiero un llamado claro a la acción para iniciar una suscripción o prueba gratis. | **Escenario 1: Botón visible y funcional** <br> Dado que un visitante navega la página <br> Cuando llega a la sección de suscripción <br> Entonces el visitante ve y puede usar un botón llamativo para iniciar suscripción o prueba.    | EP01 |
+| US05  | Compatibilidad móvil| Como visitante, quiero que la landing page funcione correctamente en móviles para informarme desde cualquier dispositivo. | **Escenario 1: Diseño responsivo** <br> Dado que un visitante usa un dispositivo móvil <br> Cuando accede a la landing page <br> Entonces la página se adapta y muestra el contenido correctamente.   | EP01 |
+| US06   | Monitoreo de alimentos | Como usuario doméstico, quiero que el sensor mida temperatura, humedad y etileno para conocer el estado real de mis alimentos y evitar desperdicios. | **Escenario 1: Registro exitoso de datos**  <br> Dado que el sensor está activo y funcionando correctamente <br> Cuando detecta variaciones en las mediciones <br> Entonces la información se envía a la aplicación en tiempo real <br> Y la información es actualizada en el sistema correctamente. <br><br> **Escenario 2: Error de conexión** <br> Dado que el sensor pierde conexión o hay fallo en la transmisión <br> Cuando el sistema detecta la pérdida de señal <br> Entonces la aplicación muestra un mensaje de error <br> Y sugiere al usuario intentar reconectar el sensor. | EP02   |
+| US07   | Visualización de inventario      | Como usuario, quiero ver en la app el estado de cada alimento para identificar cuáles están en riesgo y gestionarlos mejor. | **Escenario 1: Vista con colores** <br> Dado que el usuario accede al panel y abre la app <br> Cuando la app carga la información <br> Entonces debe mostrar el estado con colores diferenciados (verde, amarillo, rojo). <br><br> **Escenario 2: Detalle de alimento** <br> Dado que el usuario selecciona un alimento <br> Cuando se muestra la información detallada <br> Entonces debe ver la fecha estimada de caducidad y las condiciones actuales del alimento. | EP02   |
+| US08   | Alertas anticipadas | Como usuario, quiero recibir alertas cuando un alimento esté por vencer para poder consumirlo a tiempo y evitar pérdidas. | **Escenario 1: Generar alerta** <br> Dado que un alimento está próximo a caducar <br> Cuando se detecta el riesgo de vencimiento <br> Entonces el sistema envía una notificación de alerta al usuario. <br><br> **Escenario 2: No generar alerta innecesaria** <br> Dado que no hay alimentos en riesgo <br> Cuando se realiza la verificación <br> Entonces no deben generarse notificaciones. | EP03   |
+| US09   | Configuración de notificaciones | Como usuario, quiero configurar la hora y frecuencia de las notificaciones para evitar que sean invasivas y molestas. | **Escenario 1: Configuración exitosa** <br> Dado que el usuario ingresa parámetros válidos de tiempo y frecuencia <br> Cuando guarda la configuración <br> Entonces el sistema aplica las preferencias. <br><br> **Escenario 2: Error en configuración** <br> Dado que el usuario ingresa parámetros inválidos <br> Cuando intenta guardar la configuración <br> Entonces el sistema muestra un mensaje de error indicando el valor incorrecto. | EP03   |
+| US10   | Registro automático de alimentos | Como usuario, quiero registrar mis alimentos mediante voz o escáner para ahorrar tiempo y facilitar el ingreso.      | **Escenario 1: Registro por voz** <br> Dado que el usuario proporciona un comando de voz con los productos comprados <br> Cuando la app procesa el comando <br> Entonces registra los productos mencionados. <br><br> **Escenario 2: Registro por escaneo** <br> Dado que el usuario escanea un código válido <br> Cuando la app procesa el escaneo <br> Entonces registra automáticamente el producto en el inventario. | EP04   |
+| US11   | Edición de inventario  | Como usuario, quiero editar manualmente mi inventario para mantenerlo actualizado y corregir errores.  | **Escenario 1: Edición exitosa** <br> Dado que el usuario modifica la cantidad o fecha de un alimento <br> Cuando guarda los cambios <br> Entonces la app actualiza el inventario correctamente. <br><br> **Escenario 2: Error en edición** <br> Dado que el usuario ingresa datos inválidos <br> Cuando intenta guardar <br> Entonces la app muestra un mensaje de error indicando el problema. | EP04   |
+| US12   | Resumen semanal   | Como usuario, quiero recibir un reporte semanal de mis alimentos consumidos y desperdiciados para mejorar hábitos.  | **Escenario 1: Generación de reporte** <br> Dado que ha pasado una semana desde el último reporte <br> Cuando se genera el reporte semanal <br> Entonces el usuario puede verlo en la app. <br><br> **Escenario 2: Envío por correo** <br> Dado que el usuario tiene activada la opción de correo <br> Cuando el reporte es generado <br> Entonces se envía automáticamente al correo registrado. | EP04 |
+| US13   | Recetas personalizadas | Como usuario, quiero recibir recetas basadas en alimentos próximos a caducar para aprovechar mejor mis ingredientes. | **Escenario 1: Recetas con ingredientes en riesgo** <br> Dado que el usuario tiene productos próximos a vencer <br> Cuando consulta las recetas <br> Entonces la app muestra recetas que incluyen esos ingredientes. <br><br> **Escenario 2: Recetas generales** <br> Dado que no hay productos en riesgo <br> Cuando el usuario consulta recetas <br> Entonces la app muestra recetas generales y variadas. | EP05   |
+| US14   | Filtros de recetas  | Como usuario, quiero filtrar recetas por dificultad, tiempo o dieta para encontrar opciones adaptadas a mi vida.    | **Escenario 1: Aplicación de filtro** <br> Dado que el usuario selecciona un filtro (dificultad, tiempo, dieta) <br> Cuando solicita ver las recetas filtradas <br> Entonces la app muestra sólo las recetas que cumplen el filtro. <br><br> **Escenario 2: Sin coincidencias** <br> Dado que no existen recetas bajo el filtro seleccionado <br> Cuando el usuario aplica el filtro <br> Entonces la app muestra mensaje “no se encontraron recetas”. | EP05   |
+| US15   | Tutorial interactivo| Como usuario nuevo, quiero un tutorial inicial y repetible para aprender a usar la app.| **Escenario 1: Visualización al inicio** <br> Dado que el usuario es nuevo <br> Cuando inicia la app por primera vez <br> Entonces ve un tutorial interactivo. <br><br> **Escenario 2: Repetición del tutorial** <br> Dado que el usuario solicita ayuda <br> Cuando accede a “Ayuda” <br> Entonces puede repetir el tutorial en cualquier momento. | EP06   |
+| US16   | Interfaz atractiva  | Como usuario, quiero una interfaz sencilla y atractiva que me motive a usar la app y facilite la navegación.       | **Escenario 1: Diseño usable** <br> Dado que el usuario navega por la app <br> Cuando usa los menús y opciones <br> Entonces la interfaz es clara y accesible. <br><br> **Escenario 2: Reporte de error** <br> Dado que un botón está mal configurado <br> Cuando el usuario lo intenta usar <br> Entonces la app notifica al equipo técnico sobre el error. | EP06   |
+| US17   | Análisis detallado de inventario | Como usuario premium, quiero análisis detallado de mis alimentos para optimizar compras y control.    | **Escenario 1: Acceso a reporte avanzado** <br> Dado que el usuario tiene plan premium activo <br> Cuando accede a análisis de inventario <br> Entonces puede ver métricas detalladas. <br><br> **Escenario 2: Restricción para no premium** <br> Dado que el usuario no tiene plan premium <br> Cuando intenta acceder a análisis avanzado <br> Entonces se muestra aviso “Función disponible en plan premium”. | EP07   |
+| US18   | Estadísticas de ahorro  | Como usuario premium, quiero ver estadísticas de ahorro económico y reducción de desperdicio para evaluar impacto. | **Escenario 1: Visualización de estadísticas** <br> Dado que el usuario está en plan premium <br> Cuando revisa su perfil <br> Entonces ve estadísticas de ahorro acumulado. <br><br> **Escenario 2: Sin datos disponibles** <br> Dado que el usuario es nuevo en el plan premium <br> Cuando accede a estadísticas <br> Entonces ve mensaje “aún no hay estadísticas”. | EP07   |
+| US19   | Recetas exclusivas premium       | Como usuario premium, quiero recetas avanzadas para aprovechar ingredientes y diversidad.     | **Escenario 1: Acceso permitido a recetas** <br> Dado que el usuario tiene plan premium <br> Cuando accede a la sección recetas exclusivas <br> Entonces puede ver y usar las recetas. <br><br> **Escenario 2: Acceso denegado** <br> Dado que el usuario no tiene plan premium <br> Cuando intenta acceder a recetas exclusivas <br> Entonces no tiene acceso. | EP07   |
+| US20   | Reporte de impacto ambiental    | Como usuario, quiero ver reporte mensual del impacto ambiental evitado para conocer mi contribución.  | **Escenario 1: Generación del reporte** <br> Dado que el usuario accede a su perfil <br> Cuando consulta el reporte mensual <br> Entonces ve el impacto acumulado (ej. kg de CO₂ ahorrados). <br><br> **Escenario 2: Sin datos registrados** <br> Dado que no hay datos de consumo <br> Cuando accede al reporte <br> Entonces el sistema muestra mensaje “aún no hay datos”. | EP08   |
+| US21   | Compartir logros en redes        | Como usuario, quiero compartir logros de reducción de desperdicio en redes sociales para inspirar a otros.        | **Escenario 1: Compartir éxito** <br> Dado que el usuario presiona “Compartir” <br> Cuando la app genera contenido visual <br> Entonces se publica en la red social seleccionada. <br><br> **Escenario 2: Error de conexión** <br> Dado que la red social no responde <br> Cuando intenta publicar <br> Entonces la app muestra mensaje de error. | EP08   |
+| US22   | Sincronización con smart fridges | Como usuario, quiero que FreshSense se integre con refrigeradores inteligentes para recibir datos combinados y mejorar la precisión. | **Escenario 1: Integración exitosa** <br> Dado que el frigorífico es compatible y la integración está activada <br> Cuando se sincronizan datos <br> Entonces la app muestra información combinada correctamente. <br><br> **Escenario 2: Error en integración** <br> Dado que la conexión falla <br> Cuando el sistema detecta el error <br> Entonces notifica al usuario. | EP09   |
+| US23   | Control por voz con asistentes   | Como usuario, quiero controlar funciones básicas mediante asistentes de voz (Alexa, Google) para facilitar el uso.  | **Escenario 1: Comando recibido y ejecutado** <br> Dado que el usuario emite un comando de voz <br> Cuando el sistema recibe el comando <br> Entonces confirma la acción con respuesta audible o visual. <br><br> **Escenario 2: Configuración correcta** <br> Dado que el usuario configura la integración de voz <br> Cuando termina la configuración <br> Entonces la función queda habilitada. <br><br> **Escenario 3: Sin integración activa** <br> Dado que no está configurada la integración <br> Cuando se recibe comando <br> Entonces el sistema no acepta el comando y notifica al usuario. | EP09   |
+| US24   | Notificaciones personalizadas    | Como usuario, quiero configurar qué notificaciones recibir y a qué dispositivo para no ser molestado innecesariamente. | **Escenario 1: Selección de preferencias y guardado** <br> Dado que el usuario abre configuración de notificaciones <br> Cuando selecciona tipos y horarios <br> Entonces la app guarda las preferencias. <br><br> **Escenario 2: Envío filtrado de notificaciones** <br> Dado que las preferencias están guardadas <br> Cuando llega una notificación <br> Entonces solo se envía a los dispositivos configurados. <br><br> **Escenario 3: Activar o desactivar alertas** <br> Dado que el usuario cambia el estado de alertas <br> Cuando termina la acción <br> Entonces la app aplica el cambio correctamente. | EP09   |
+| US25   | Logros y recompensas| Como usuario, quiero ganar logros por uso frecuente y reducción de desperdicio para motivarme a continuar usándola. | **Escenario 1: Registro y otorgamiento de logros** <br> Dado que el usuario cumple metas de uso y reducción <br> Cuando el sistema registra el progreso <br> Entonces otorga badges o puntos. <br><br> **Escenario 2: Visualización de logros** <br> Dado que hay logros obtenidos <br> Cuando el usuario accede a su perfil <br> Entonces ve los logros mostrados. <br><br> **Escenario 3: Notificación de nuevos logros** <br> Dado que se gana un nuevo logro <br> Cuando el sistema lo actualiza <br> Entonces notifica al usuario. | EP10   |
+| US26   | Compartir en redes sociales      | Como usuario, quiero compartir mis logros en redes sociales para inspirar a otros a reducir desperdicio.| **Escenario 1: Compartir exitoso** <br> Dado que el usuario presiona “Compartir” <br> Cuando se genera el contenido visual <br> Entonces publica en la red social seleccionada. <br><br> **Escenario 2: Error al compartir** <br> Dado que la red social no responde correctamente <br> Cuando se intenta publicar <br> Entonces la app muestra mensaje de error y opción para reintentar. | EP10   |
+| US27   | Retos y competencias| Como usuario, quiero participar en retos para incentivar la reducción de desperdicio y ganar premios. | **Escenario 1: Inscripción en retos** <br> Dado que la app ofrece retos activos <br> Cuando el usuario se inscribe <br> Entonces puede comenzar a participar y ver su avance. <br><br> **Escenario 2: Visualización del ranking** <br> Dado que el reto está activo <br> Cuando el usuario consulta posiciones <br> Entonces muestra tabla de ranking actualizada. <br><br> **Escenario 3: Salir del reto** <br> Dado que el usuario decide abandonar un reto <br> Cuando pide salir <br> Entonces la app lo elimina efectivamente del reto. | EP10   |
+| US28   | Categorías personalizadas        | Como usuario, quiero crear y asignar categorías para organizar mis alimentos según mis preferencias.  | **Escenario 1: Crear nueva categoría** <br> Dado que el usuario solicita crear una categoría <br> Cuando ingresa nombre válido <br> Entonces la categoría se crea y guarda. <br><br> **Escenario 2: Asignar categoría a alimentos** <br> Dado que existen categorías disponibles <br> Cuando el usuario asigna alimentos a una categoría <br> Entonces la asignación se refleja correctamente. <br><br> **Escenario 3: Persistencia de categorías** <br> Dado que el usuario vuelve a la app <br> Cuando carga la vista del inventario <br> Entonces las categorías creadas están visibles y asignadas. | EP11   |
+| US29   | Historial de consumo| Como usuario, quiero consultar un historial para analizar hábitos y ajustar compras futuras.     | **Escenario 1: Registro de consumo** <br> Dado que el usuario consume o descarta un alimento <br> Cuando se actualiza el inventario <br> Entonces se registra fecha y acción en historial. <br><br> **Escenario 2: Visualización del historial** <br> Dado que hay datos registrados <br> Cuando el usuario accede a historial <br> Entonces muestra listado y gráficas ordenadas por fecha. <br><br> **Escenario 3: Filtrar y exportar datos** <br> Dado que el usuario aplica filtros específicos <br> Cuando solicita exportar datos <br> Entonces puede descargar información en formato común (CSV, Excel). | EP11   |
+| US30   | Sugerencias de compra  | Como usuario, quiero recibir sugerencias basadas en inventario y consumo para evitar faltantes y excesos.      | **Escenario 1: Generación de recomendaciones** <br> Dado que hay datos de inventario y consumo <br> Cuando la app analiza información <br> Entonces genera sugerencias pertinentes. <br><br> **Escenario 2: Envío de notificaciones periódicas** <br> Dado que la función está habilitada <br> Cuando es momento de enviar notificaciones <br> Entonces el usuario recibe recomendaciones semanales o mensuales. <br><br> **Escenario 3: Personalización de sugerencias** <br> Dado que el usuario modifica preferencias <br> Cuando guarda configuraciones <br> Entonces recomendaciones futuras se ajustan según preferencias. | EP11   |
+| TS31   | API para registro de sensores    | Como developer, necesito una API que reciba y almacene datos de sensores para mantener actualizado el estado de alimentos. | **Escenario 1: Recepción exitosa** <br> Dado que el sensor envía datos válidos <br> Cuando el API recibe el request <br> Entonces responde con éxito y almacena los datos correctamente.        | EP12 |
+| TS32   | API para envío de notificaciones | Como developer, necesito un endpoint para enviar notificaciones basadas en alertas de sensores.| **Escenario 1: Notificación enviada** <br> Dado que hay una alerta activa <br> Cuando se llama al endpoint <br> Entonces se envía la notificación al usuario correspondiente.  | EP12 |
+| TS33   | API para gestión de usuarios| Como developer, necesito que el API permita administrar roles y permisos para controlar acceso a funciones premium. | **Escenario 1: Actualización exitosa** <br> Dado que un admin realiza un cambio válido <br> Cuando se procesa el request <br> Entonces el API actualiza correctamente los permisos del usuario.| EP12 |
+
+## Epics
+
+| Epic ID | Título   | Descripción corta  |
+|---------|-----------------------------------------|------------------------------------------------------------------------------------------------------------|
+| EP01    | Sitio web estático (Landing Page)   | Contenido e interacción para visitantes y segmentos, vinculados a la experiencia web y generación de leads.   |
+| EP02    | Monitoreo de alimentos| Gestionar en tiempo real el estado de frutas, verduras y perecibles con sensores de temperatura, humedad y gas etileno. |
+| EP03    | Alertas y notificaciones inteligentes    | Avisar a los usuarios cuando un alimento esté próximo a vencer o deteriorarse con alertas personalizadas.|
+| EP04    | Gestión de inventario alimenticio   | Permitir registrar, visualizar y organizar los alimentos disponibles en el refrigerador, con reportes periódicos. |
+| EP05    | Recetas personalizadas| Recomendar preparaciones basadas en ingredientes disponibles para fomentar su consumo eficiente.|
+| EP06    | Experiencia de usuario y accesibilidad   | Garantizar una app intuitiva, visualmente atractiva y fácil de usar, con tutoriales para nuevos usuarios.|
+| EP07    | Modelo de suscripción premium| Ofrecer planes pagos con funciones avanzadas como análisis detallado de inventario, estadísticas y recetas exclusivas. |
+| EP08    | Impacto ambiental y sostenibilidad  | Promover la reducción del desperdicio y concientizar sobre el ahorro económico y ecológico.|
+| EP09    | Integración con dispositivos inteligentes| Facilitar la conexión y sincronización de FreshSense con refrigeradores inteligentes y asistentes de voz.|
+| EP10    | Comunidad y gamificación    | Fomentar motivación y compromiso usando logros, retos y la posibilidad de compartir avances en redes sociales.|
+| EP11    | Gestión avanzada de inventario | Proveer herramientas para organización, análisis y optimización del inventario con categorías e historial.    |
+| EP12  | RESTful API | Back-end para funcionalidades centrales incluyendo gestión de sensores, notificaciones y usuarios. |
+
+## 3.3. Impact Mapping
+El Impact Mapping de FreshSense se elaboró con el propósito de vincular las metas estratégicas de la startup con las necesidades de los usuarios y las funcionalidades priorizadas. Esta herramienta permite visualizar de manera clara la relación entre el Business Goal, los User Personas, los cambios de comportamiento esperados (Impacts), las funcionalidades propuestas (Deliverables) y las User Stories asociadas.
+
+![alt text](assets/ImpactMap_FreshSense.png)
+
+En conclusión, el Impact Mapping permitió establecer una trazabilidad clara entre la estrategia de negocio y la implementación del producto. Esto asegura que las funcionalidades priorizadas no solo atiendan a los requerimientos técnicos, sino que generen un impacto real en los hábitos de consumo de los usuarios, reduzcan el desperdicio alimentario y fortalezcan el modelo de negocio de FreshSense.
+
+## 3.4. Product Backlog
+| # Orden | User Story ID | Título                                | Descripción                                                                 | Story Points (1 / 2 / 3 / 5 / 8) |
+|--------:|---------------|----------------------------------------|-----------------------------------------------------------------------------|----------------------------------|
+| 1       | US01          | Visualización propuesta                | Como visitante adulto joven, quiero entender rápidamente la propuesta de FreshSense para valorar su utilidad. | 2 |
+| 2       | US02          | Sección para pequeños negocios         | Como visitante emprendedor, quiero información dedicada para sentirme identificado y entender beneficios. | 2 |
+| 3       | US03          | Formulario de contacto                 | Como visitante, quiero un formulario simple para solicitar información o demo fácilmente. | 2 |
+| 4       | US04          | CTA para suscripción                   | Como visitante interesado, quiero un llamado claro a la acción para iniciar una suscripción o prueba gratis. | 2 |
+| 5       | US05          | Compatibilidad móvil                   | Como visitante, quiero que la landing funcione correctamente en móviles. | 3 |
+| 6       | US06          | Monitoreo de alimentos                 | Como usuario doméstico, quiero que el sensor mida temperatura, humedad y etileno. | 5 |
+| 7       | US07          | Visualización de inventario            | Como usuario, quiero ver el estado de cada alimento e identificar riesgos. | 3 |
+| 8       | US08          | Alertas anticipadas                    | Como usuario, quiero recibir alertas cuando un alimento esté por vencer. | 5 |
+| 9       | US09          | Configuración de notificaciones        | Como usuario, quiero configurar hora y frecuencia de notificaciones. | 3 |
+| 10      | US10          | Registro automático de alimentos       | Como usuario, quiero registrar alimentos por voz o escaneo. | 5 |
+| 11      | US11          | Edición de inventario                  | Como usuario, quiero editar manualmente mi inventario. | 2 |
+| 12      | US12          | Resumen semanal                        | Como usuario, quiero recibir un reporte semanal de consumo y desperdicio. | 3 |
+| 13      | US13          | Recetas personalizadas                 | Como usuario, quiero recetas basadas en alimentos próximos a caducar. | 5 |
+| 14      | US14          | Filtros de recetas                     | Como usuario, quiero filtrar recetas por dificultad, tiempo o dieta. | 3 |
+| 15      | US15          | Tutorial interactivo                   | Como usuario nuevo, quiero un tutorial inicial y repetible. | 2 |
+| 16      | US16          | Interfaz atractiva                     | Como usuario, quiero una interfaz sencilla y motivadora. | 3 |
+| 17      | US17          | Análisis detallado de inventario       | Como usuario premium, quiero análisis detallado para optimizar compras. | 5 |
+| 18      | US18          | Estadísticas de ahorro                 | Como usuario premium, quiero ver ahorro económico y reducción de desperdicio. | 3 |
+| 19      | US19          | Recetas exclusivas premium             | Como usuario premium, quiero recetas avanzadas. | 2 |
+| 20      | US20          | Reporte de impacto ambiental           | Como usuario, quiero ver reporte mensual de impacto ambiental evitado. | 3 |
+| 21      | US21          | Compartir logros en redes              | Como usuario, quiero compartir mis logros en redes sociales. | 2 |
+| 22      | US22          | Sincronización con smart fridges       | Como usuario, quiero integrar refrigeradores inteligentes. | 8 |
+| 23      | US23          | Control por voz con asistentes         | Como usuario, quiero controlar funciones con Alexa/Google Assistant. | 5 |
+| 24      | US24          | Notificaciones personalizadas          | Como usuario, quiero configurar qué notificaciones recibir y a qué dispositivo. | 3 |
+| 25      | US25          | Logros y recompensas                   | Como usuario, quiero ganar logros por uso y reducción de desperdicio. | 3 |
+| 26      | US26          | Compartir en redes sociales            | Como usuario, quiero compartir mis logros para inspirar a otros. | 2 |
+| 27      | US27          | Retos y competencias                   | Como usuario, quiero participar en retos para reducir desperdicio. | 5 |
+| 28      | US28          | Categorías personalizadas              | Como usuario, quiero crear y asignar categorías propias. | 3 |
+| 29      | US29          | Historial de consumo                   | Como usuario, quiero consultar historial para analizar hábitos. | 5 |
+| 30      | US30          | Sugerencias de compra                  | Como usuario, quiero sugerencias basadas en inventario y consumo. | 5 |
+| 31      | TS31          | API para registro de sensores          | Como developer, necesito una API que reciba y almacene datos de sensores. | 5 |
+| 32      | TS32          | API para envío de notificaciones       | Como developer, necesito un endpoint para enviar notificaciones basadas en alertas. | 3 |
+| 33      | TS33          | API para gestión de usuarios           | Como developer, necesito que el API permita administrar roles y permisos. | 5 |
+
+
+# Capítulo IV: Product Design
+
+El desarrollo de FreshSense requiere establecer un conjunto de lineamientos visuales y de interacción que aseguren la coherencia de la experiencia en todas sus interfaces. Para ello, se definen estándares generales aplicables a todo el ecosistema del producto, así como guías específicas para la aplicación web. Estos lineamientos están inspirados en principios de diseño como consistencia, simplicidad, accesibilidad y comunicación clara, garantizando una experiencia confiable y atractiva para los usuarios finales.
+
+## 4.1. Style Guidelines
+
+Los lineamientos generales proporcionan una base visual y comunicacional uniforme que sirve como referencia para cualquier pieza del producto FreshSense.
+
+### 4.1.1. General Style Guidelines
+
+Los lineamientos generales proporcionan una base visual y comunicacional uniforme que sirve como referencia para cualquier pieza del producto FreshSense, ya sea en medios digitales, impresos o presentaciones institucionales.
+
+**Branding:**
+
+El logo de FreshSense transmite innovación y sostenibilidad, con un estilo limpio que simboliza frescura y control. Se privilegia el uso de elementos visuales asociados a alimentos, frescura y naturaleza, lo cual refuerza la misión de reducir el desperdicio de alimentos mediante tecnología.
+
+![alt text](assets/FreshSense.jpg)
+
+**Typography:**
+
+La tipografía de FreshSense fue seleccionada con el objetivo de transmitir modernidad, simplicidad y legibilidad en cualquier dispositivo digital. Se adoptó la familia Poppins, ampliamente utilizada en interfaces web por su estilo limpio y adaptable. La definición de jerarquías tipográficas claras (H1, H2, H3 y párrafo) asegura una correcta organización de la información, permitiendo que los títulos resalten con fuerza mientras los textos de párrafo mantienen una lectura cómoda y fluida.
+
+![alt text](assets/Typography_FreshSense.jpg)
+
+**Colors:**
+
+La paleta cromática de FreshSense refleja los valores de frescura, sostenibilidad y confianza que inspiran al producto. Los tonos verdes y azules transmiten vitalidad y dinamismo, mientras que los grises y el blanco generan equilibrio, limpieza y contraste. Esta selección no solo aporta coherencia visual a la marca, sino que también mejora la accesibilidad y la experiencia del usuario en diferentes contextos y dispositivos.
+
+![alt text](assets/Colors_FreshSense.jpg)
+
+Uso de colores:
+
+- Green (Prymary): Botones primarios, acentos principales
+- Blue (Secondary): fondos de tarjetas y secciones suaves
+- Gray 500 (Neutral Text / Secondary): textos secundarios, íconos, labels
+- White (Background / Contrast): fondo principal, tarjetas, espacios en blanco
+- Text (Base): color de texto principal
+
+**Spacing & Layout:**
+
+La organización del espacio en FreshSense se fundamenta en una estructura modular que garantiza orden, coherencia y equilibrio visual en todas las interfaces. El uso de un sistema de grillas y una unidad base de espaciado permite mantener consistencia entre secciones, componentes y tipografías, asegurando una experiencia clara y agradable para el usuario. Asimismo, la aplicación de márgenes amplios y paddings uniformes favorece la legibilidad y resalta los elementos clave, transmitiendo una sensación de limpieza y simplicidad.
+
+Base Unit
+- Size: 8 px
+- Uso: unidad mínima para márgenes, paddings y separación entre elementos.
+
+Grid System
+- Grid: 12 columnas
+- Gutter: 22 px
+- Margins: proporcionales a la unidad base (múltiplos de 8 px)
+
+Section Spacing
+- Padding vertical: 56 px (sección estándar)
+- Hero section: 72 px
+- Footer: 36–56 px
+
+Cards & Components
+- Padding interno: 18–22 px
+- Border-radius: 16 px (estándar)
+- Elevation: sombra suave 0 10px 25px rgba(0,0,0,.08)
+
+Alignment
+- Contenido centrado en un contenedor máximo de 1120 px o 92% del ancho de pantalla.
+- Texto alineado a la izquierda para mejorar legibilidad.
+- Uso de espacios amplios para separar secciones y resaltar contenido clave.
+
+### 4.1.2. Web Style Guidelines
+Se utilizó el patrón de lectura Z para guiar la atención del usuario en la versión desktop. El recorrido inicia en el logo y menú superior, continúa hacia el llamado a la acción principal en el centro de la pantalla, y finaliza en la imagen ilustrativa del producto. Este flujo visual facilita una comprensión inmediata del mensaje y promueve la interacción con los botones principales en cuestión de segundos.
+
+En la versión móvil, se aplicó el patrón de lectura F, estructurando el contenido en bloques horizontales que se escanean de arriba hacia abajo. Comienza con la barra de navegación y el logo, seguido del mensaje principal y las llamadas a la acción, continúa con los segmentos y beneficios, y termina en la sección de contacto. Este orden favorece una lectura jerárquica y natural en pantallas pequeñas, optimizando la experiencia de desplazamiento vertical.
+
+## 4.2. Information Architecture
+La arquitectura de la información en **FreshSense** se ha diseñado para garantizar que los usuarios puedan encontrar rápidamente lo que buscan y navegar de forma intuitiva tanto en la landing page como en la aplicación web. Las decisiones tomadas responden a la necesidad de minimizar la carga cognitiva, facilitar la interacción y ofrecer una experiencia fluida que refleje los valores de sostenibilidad y eficiencia del producto.
+### 4.2.1. Organization Systems
+Para **FreshSense** se aplican diferentes sistemas de organización según el tipo de contenido:
+
+- **Organización jerárquica (Visual Hierarchy):** en la landing page se estructura la información en niveles, destacando primero el valor principal de la propuesta, seguido de beneficios, testimonios, segmentos y finalmente la sección de contacto.  
+- **Organización secuencial (Step-by-step):** en la aplicación web, ciertas funciones como el registro de alimentos o configuración de notificaciones siguen un flujo paso a paso que guía al usuario de forma clara.  
+- **Organización por tópicos:** dentro de la aplicación, el inventario de alimentos se categoriza según estado de conservación (frescos, próximos a vencer, vencidos) y tipo de producto (frutas, verduras, carnes).  
+- **Organización según audiencia:** en la landing page se diferencian bloques dirigidos a adultos jóvenes y pequeños negocios, con mensajes y beneficios adaptados a cada segmento.  
+### 4.2.2. Labeling Systems
+El sistema de etiquetado en **FreshSense** busca simplicidad y claridad para que los usuarios comprendan de inmediato el contenido. Se han definido etiquetas cortas y directas como:  
+
+- **Aplicación:** Inventario, Recetas, Alertas, Historial, Premium  
+- **Landing Page:** Inicio, Beneficios, Segmentos, Contacto, Suscripción  
+
+Además, en botones y CTAs se utilizan verbos de acción como:  
+“**Suscríbete**”, “**Explora recetas**”, “**Ver inventario**”.
+### 4.2.3. SEO Tags and Meta Tags
+Para optimizar la visibilidad en motores de búsqueda, se han definido los siguientes meta elementos principales:  
+
+- **Title (Landing Page):** FreshSense | Reduce el desperdicio de alimentos con tecnología inteligente  
+- **Meta Description:** FreshSense combina sensores y una app web para monitorear alimentos, prevenir desperdicios y ahorrar dinero en casa o negocio.  
+- **Meta Keywords:** desperdicio de alimentos, sostenibilidad, recetas personalizadas, inventario inteligente, sensores de refrigerador  
+- **Author:** Equipo FreshSense – SenseEat Startup 
+### 4.2.4. Searching Systems
+En la aplicación web se incluyen sistemas de búsqueda que ayudan al usuario a localizar información sin esfuerzo:  
+
+- **Búsqueda en inventario:** encontrar rápidamente un alimento por nombre o categoría.  
+- **Filtros avanzados:** ordenar productos por estado (fresco, próximo a vencer, vencido), fecha de registro o categoría personalizada.  
+- **Búsqueda en recetas:** filtros por ingredientes, tiempo de preparación, dificultad y tipo de dieta (vegetariana, vegana, sin gluten).  
+### 4.2.5. Navigation Systems
+La navegación en **FreshSense** combina claridad y fluidez, guiando al usuario hacia la consecución de sus metas:  
+
+- **Landing Page (Desktop):** menú superior con navegación anclada (Inicio, Beneficios, Segmentos, Contacto, Suscripción).  
+- **Landing Page (Móvil):** menú tipo “hamburguesa” con navegación vertical, simplificada para pantallas pequeñas.  
+- **Aplicación Web:** navegación lateral (sidebar) con funciones principales: Inventario, Recetas, Alertas, Historial, Premium.  
+- **CTAs estratégicos:** botones visibles y consistentes que llevan al usuario a acciones críticas como suscripción, registro de alimentos o activación de alertas.
+  
+En conjunto, el sistema de navegación asegura que tanto visitantes como usuarios recurrentes encuentren el contenido y funcionalidades de forma rápida y eficiente.
+## 4.3. Landing Page UI Design
+### 4.3.1. Landing Page Wireframe
+
+A continuación se realizaron los wireframes de la landing page de FreshSense, siguiendo los user stories como referencia, para conocer las necesidades y preferencias de los usuarios visitantes:
+
+*Figura 1.* Wireframe de la página principal 
+![Hero](assets/LP_HERO.PNG) 
+
+*Figura 2.* Como funciona FreshSense
+![Hero](assets/LP_HTW.PNG) 
+
+*Figura 3.* Vistazo inicial a los beneficios 
+![Hero](assets/LP_BENEFITS.PNG) 
+
+*Figura 4.* Modelo inicial para los planes de subscripción.
+![Hero](assets/LP_PLANS.PNG) 
+
+*Figura 5.* Wireframe para los testimonios
+![Hero](assets/LP_TESTIMONIALS.PNG) 
+
+*Figura 6.* Wireframe para el formulario y se incluye el footer
+![Hero](assets/LP_FORM.PNG) 
+
+
+### 4.3.2. Landing Page Mock-up
+
+Una vez se realizaron los wireframes, usamos los Style Guidelines, para desarrollar el siguiente paso, los mock ups, utilizamos los colores y modelos referidos en los guidelines, los colores verdes y azules predominantes en el diseño, aluden a la escencia de la aplicación:
+
+*Figura 7.* Mock-Up de la página principal 
+![Hero](assets/MK_LP_HERO.PNG) 
+
+*Figura 8.* Mock-Up se muestra las funciones de FreshSense
+![Hero](assets/MK_LP_HTW.PNG) 
+
+*Figura 9.* Vistazo inicial a los beneficios 
+![Hero](assets/MK_LP_BENEFITS.PNG) 
+
+*Figura 10.* Mock-Up para los planes de subscripción.
+![Hero](assets/MK_LP_PLANS.PNG) 
+
+*Figura 11.* Mock-Up para los testimonios
+![Hero](assets/MK_LP_TESTIMONIALS.PNG) 
+
+*Figura 12.* Mock-Up para el formulario y se incluye el footer
+![FORM](assets/MK_LP_FORM.PNG) 
+## 4.4. Web Applications UX/UI Design
+En la sección de Web Applications UX/UI Design nos enfocamos en el diseño de la interfaz y la experiencia de usuario de la aplicación web de FreshSenser, donde incluimos una visualización funcional por cada parte del aplicativo con sus flujos de interacción completos. Se elaboraron wireframes en formato mobile que facilitan la disposición de las funciones de la plataforma a través de su dispositivo móvil frecuente, con elementos en pantallas que son la introducción al app, el login up, el sign up, el home o dashboard, el menú, el inventario de insumos, el detalle de cada insumo, el monitoreo de insumos, alertas, recetas, reportes, logros y soporte. En base a estos esquemas se diseñaron los mockups con alta fidelidad. En los siguientes sprints se muestra el desarrollo de cada vista de la app y cómo estas interactúan.
+### 4.4.1. Web Applications Wireframes
+![wireframeapp1](assets/wireframeapp1.png)
+![wireframeapp2](assets/wireframeapp2.png)
+![wireframeapp3](assets/wireframeapp3.png)
+![wireframeapp4](assets/wireframeapp4.png)
+![wireframeapp5](assets/wireframeapp5.png)
+![wireframeapp6](assets/wireframeapp6.png)
+![wireframeapp7](assets/wireframeapp7.png)
+
+### 4.4.2. Web Applications Wireflow Diagrams
+
+Para este apartado, el wireflow se diseñó para representar de forma detallada el proceso de uso desde el inicio de sesión hasta las funcionalidades principales, como la gestión del inventario de alimentos, el monitoreo en tiempo real, la recepción de alertas, la consulta de recetas, el seguimiento de logros y la personalización de ajustes. De esta manera, se asegura que la navegación sea coherente, intuitiva y centrada en mejorar la experiencia del usuario final.
+
+![alt text](assets/FreshSense_Web_Applications_Wireflow_Diagrams.jpg)
+
+### 4.4.3. Web Applications Mock-ups
+
+![mockupapp1](assets/mockupapp1.png)
+![mockupapp2](assets/mockupapp2.png)
+![mockupapp3](assets/mockupapp3.png)
+![mockupapp4](assets/mockupapp4.png)
+![mockupapp5](assets/mockupapp5.png)
+![mockupapp6](assets/mockupapp6.png)
+![mockupapp7](assets/mockupapp7.png)
+
+### 4.4.4. Web Applications User Flow Diagrams
+![alt text](assets/cuadritosFLOW.jpg)
+
+Cada figura del diagrama tiene un significado específico dentro del flujo de usuario:
+
+- Start: punto de inicio del recorrido.
+
+- Page: pantalla normal de la aplicación.
+
+- Option Page: menú o sección con varias opciones.
+
+- End: final del flujo o salida de la app.
+
+- Input: ingreso de datos por parte del usuario.
+
+- Decision: condición que define diferentes caminos.
+
+- Result: acción realizada con éxito.
+
+- Notification: mensaje o alerta mostrado al usuario.
+
+![alt text](<assets/Web Applications User Flow Diagrams.jpg>)
+
+Ahora representamos los User Flow Diagrams de la aplicación web FreshSense, los cuales permiten visualizar de manera clara el recorrido que realiza el usuario dentro del sistema, desde que abre la aplicación hasta que cierra sesión. Este diagrama utiliza convenciones gráficas específicas para identificar los distintos tipos de pantallas, acciones, decisiones, resultados y notificaciones que intervienen en la experiencia del usuario. Gracias a esta representación, se facilita el análisis de la interacción, la detección de posibles mejoras en la navegación y la validación de que todos los escenarios de uso estén contemplados.
+
+## 4.5. Web Applications Prototyping
+Link al prototipo: https://www.figma.com/proto/WMu6m6D3rPs3AI4HYKKbNJ/WireFrames-LandingPage?node-id=159-1605&p=f&t=tnVLge8rsFfHhU1S-1&scaling=min-zoom&content-scaling=fixed&page-id=159%3A1603
+
+
+## 4.6. Domain-Driven Software Architecture
+### 4.6.1. Design-Level EventStorming
+
+![event storming6](assets/Event6.jpeg)
+![event storming7](assets/Event7.jpeg)
+![event storming8](assets/Event8.jpeg)
+![event storming9](assets/Event9.jpeg)
+![event storming10](assets/Event10.jpeg)
+### 4.6.2. Software Architecture Context Diagram
+![diagrama-contexto](assets/diagrama-contexto.png)
+
+### 4.6.3. Software Architecture Container Diagrams
+![diagrama-contenedores](assets/diagrama-contenedores.png)
+
+### 4.6.4. Software Architecture Components Diagrams
+![diagrama-componentes](assets/diagrama-componentes.png)
+
+## 4.7. Software Object-Oriented Design
+### 4.7.1. Class Diagrams
+
+```mermaid
+classDiagram
+  %% === Bounded Context: Monitoring ===
+  class SensorDevice {
+    +UUID id
+    +string model
+    +string firmwareVersion
+    +DeviceStatus status
+    +register()
+    +pairToHousehold(Household)
+  }
+
+  class SensorReading {
+    +UUID id
+    +DateTime timestamp
+    +float temperatureC
+    +float humidityPct
+    +float ethylenePpm
+  }
+
+  class Household {
+    +UUID id
+    +string name
+  }
+
+  SensorDevice "1" --> "0..*" SensorReading : produces >
+  Household "1" --> "0..*" SensorDevice : owns >
+
+  %% === Bounded Context: Inventory ===
+  class PantryItem {
+    +UUID id
+    +string name
+    +Quantity quantity
+    +Unit unit
+    +DateTime addedAt
+    +DateTime? bestBefore
+    +FreshnessStatus status  %% fresh | atRisk | spoiled
+    +markConsumed()
+    +markDiscarded(reason)
+  }
+
+  class FoodModel {
+    +UUID id
+    +string category    %% e.g., Fruta, Verdura, Lácteo
+    +ShelfLifeRules rules
+  }
+
+  PantryItem "*" --> "1" FoodModel : isA >
+
+  class FreshnessService {
+    +FreshnessStatus evaluate(PantryItem, SensorReading*)
+    +DateTime estimateBestBefore(PantryItem, FoodModel, SensorReading*)
+  }
+
+  %% === Alerts & Notifications ===
+  class ExpirationAlert {
+    +UUID id
+    +DateTime raisedAt
+    +AlertType type      %% nearing_expiry | high_ethylene | temp_risk
+    +AlertStatus status  %% open | sent | snoozed | resolved
+    +resolve()
+  }
+
+  class NotificationPreference {
+    +UUID id
+    +bool email
+    +bool push
+    +TimeWindow quietHours
+  }
+
+  PantryItem "1" --> "0..*" ExpirationAlert : triggers >
+  User "1" --> "1" NotificationPreference
+
+  class Recipe {
+    +UUID id
+    +string title
+    +int prepMinutes
+    +Difficulty difficulty
+    +string instructions
+  }
+
+  class RecipeIngredient {
+    +UUID id
+    +string name
+    +Quantity qty
+    +Unit unit
+    +bool optional
+  }
+
+  Recipe "1" --> "1..*" RecipeIngredient
+  PantryItem "0..*" --> "0..*" Recipe : suggests *based on atRisk items*
+
+  class ConsumptionReport {
+    +UUID id
+    +Period period
+    +Money savedAmount
+    +float wasteReducedKgCO2
+  }
+
+  class Subscription {
+    +UUID id
+    +PlanType plan      %% free | premium
+    +DateTime startedAt
+    +DateTime? endsAt
+    +isActive(): bool
+  }
+
+  User "1" --> "0..*" ConsumptionReport
+  User "1" --> "0..1" Subscription
+
+  class User {
+    +UUID id
+    +string email
+    +string fullName
+  }
+
+  Household "1" --> "1..*" User : members >
+  User "1" --> "0..*" PantryItem : owns/maintains >
+
+```
+### 4.7.2. Class Dictionary
+| **Class**                       | **Definition**                                                                                        |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Product**                     | Entity that represents a product, with details such as name, description, stock, price, and category. |
+| **Category**                    | Entity that groups products under a specific name and description.                                    |
+| **Description**                 | Value Object that encapsulates the textual description of a product.                                  |
+| **StockQuantity**               | Value Object that manages the stock quantity of a product and its operations.                         |
+| **Price**                       | Value Object that represents the price of a product and allows discounts to be applied.               |
+| **Inventory**                   | Aggregate that manages a collection of products, allowing adding, removing, and updating their stock. |
+| **IInventoryRepository**        | Interface that defines persistence operations for the Inventory.                                      |
+| **StockService**                | Domain service that adjusts the stock of products within the Inventory.                               |
+| **InventoryApplicationService** | Application service that orchestrates high-level operations over the Inventory.                       |
+| **DTOProduct**                  | Data Transfer Object that represents the structure of a product in the application layer.             |
+| **DTOInventory**                | Data Transfer Object that represents a complete Inventory in the application layer.                   |
+| **InventoryRepositorySQL**      | Concrete implementation of the repository using SQL to persist the Inventory.                         |
+
+## 4.8. Database Design
+### 4.8.1. Database Diagram
+
+```mermaid
+erDiagram
+  %% ========= CORE IDENTIDAD / HOGAR =========
+  USERS ||--o{ HOUSEHOLD_MEMBERS : "pertenece a"
+  HOUSEHOLDS ||--o{ HOUSEHOLD_MEMBERS : "tiene miembros"
+  HOUSEHOLDS ||--o{ DEVICES : "posee"
+
+  %% ========= MONITOREO =========
+  DEVICES ||--o{ SENSOR_READINGS : "genera"
+
+  %% ========= INVENTARIO =========
+  USERS ||--o{ PANTRY_ITEMS : "registra"
+  FOOD_MODELS ||--o{ PANTRY_ITEMS : "clasifica"
+  PANTRY_ITEMS ||--o{ EXPIRATION_ALERTS : "dispara"
+
+  %% ========= NOTIFICACIONES =========
+  USERS ||--o| NOTIFICATION_PREFERENCES : "configura"
+
+  %% ========= RECETAS =========
+  RECIPES ||--o{ RECIPE_INGREDIENTS : "incluye"
+  PANTRY_ITEMS }o--o{ RECIPES : "sugiere uso en"
+
+  %% ========= (OPCIONAL) =========
+  USERS ||--o| SUBSCRIPTIONS : "suscripción"
+  USERS ||--o{ CONSUMPTION_REPORTS : "recibe"
+
+  USERS {
+    string id PK
+    string email
+    string full_name
+    string password_hash
+    datetime created_at
+    datetime updated_at
+  }
+
+  HOUSEHOLDS {
+    string id PK
+    string name
+    datetime created_at
+    datetime updated_at
+  }
+
+  HOUSEHOLD_MEMBERS {
+    string id PK
+    string household_id
+    string user_id
+    string role
+    datetime joined_at
+  }
+
+  DEVICES {
+    string id PK
+    string household_id
+    string model
+    string firmware_version
+    string status
+    datetime registered_at
+    datetime updated_at
+  }
+
+  SENSOR_READINGS {
+    string id PK
+    string device_id
+    datetime ts
+    float temperature_c
+    float humidity_pct
+    float ethylene_ppm
+    string meta
+  }
+
+  FOOD_MODELS {
+    string id PK
+    string name
+    string category
+    int shelf_life_days
+    string rules_json
+    datetime created_at
+    datetime updated_at
+  }
+
+  PANTRY_ITEMS {
+    string id PK
+    string user_id
+    string food_model_id
+    string name
+    float quantity
+    string unit
+    datetime added_at
+    date best_before
+    string status
+    string notes
+  }
+
+  EXPIRATION_ALERTS {
+    string id PK
+    string pantry_item_id
+    datetime raised_at
+    string type
+    string status
+    string meta
+  }
+
+  NOTIFICATION_PREFERENCES {
+    string id PK
+    string user_id
+    boolean email_enabled
+    boolean push_enabled
+    string quiet_start
+    string quiet_end
+    datetime updated_at
+  }
+
+  RECIPES {
+    string id PK
+    string title
+    int prep_minutes
+    string difficulty
+    string instructions
+    datetime created_at
+    datetime updated_at
+  }
+
+  RECIPE_INGREDIENTS {
+    string id PK
+    string recipe_id
+    string name
+    float qty
+    string unit
+    boolean optional
+  }
+
+  SUBSCRIPTIONS {
+    string id PK
+    string user_id
+    string plan
+    datetime started_at
+    datetime ends_at
+    boolean active
+  }
+
+  CONSUMPTION_REPORTS {
+    string id PK
+    string user_id
+    date period_start
+    date period_end
+    float saved_amount
+    float waste_reduced_kgco2
+    datetime created_at
+  }
+
+```
+
+# Capítulo V: Product Implementation, Validation & Deployment
+## 5.1. Software Configuration Management
+
+En esta sección se detalla cómo se implementa, organiza y publica FreshSense en su estado actual (Landing estática con HTML, CSS y JavaScript). No se utiliza aún backend ni base de datos; la publicación se realiza con GitHub Pages. El objetivo es mantener la consistencia del desarrollo y dejar preparado el terreno para futuras iteraciones.
+
+---
+
+### 5.1.1. Software Development Environment Configuration  
+**Implementado (estado actual):**
+
+- **Frontend (Landing):** HTML5, CSS3, JavaScript (vanilla).  
+- **Responsive Web Design:** únicamente con CSS (Flexbox/Grid).  
+- **Editor recomendado:** Visual Studio Code.  
+- **Control de versiones y colaboración:** Git + GitHub.  
+- **Gestión de tareas:** Trello (board de sprints).  
+
+**Estructura de archivos (referencial):**
+```
+Landing-page-FreshSense/
+├─ index.html
+├─ css/
+│ └─ styles.css
+├─ js/
+│ └─ main.js
+├─ assets/
+│ ├─ img/
+│ └─ ...
+└─ i18n/
+└─ translate.js
+```
+
+> Nota: En esta entrega no se ha implementado servidor, API ni base de datos.
+
+---
+
+### 5.1.2. Source Code Management  
+
+**Repositorio GitHub (actual):**  
+`https://github.com/1ASI0729-2520-7357-G4-SenseEat/Landing-page-FreshSense`
+
+**Flujo de trabajo (GitFlow ligero):**
+
+- **Ramas principales**
+  - `main`: versión estable publicada.  
+  - `develop`: integración previa a publicación.  
+
+- **Ramas de apoyo**
+  - `feature/*`: nuevas secciones o mejoras.  
+    Ejemplo: `feature/sprint1-[nombre]`
+
+**Conventional Commits (ejemplos):**
+```
+feat: agregar sección de planes con cards responsivas
+fix(navbar): corregir overflow en versión móvil
+docs(readme): actualizar pasos de despliegue en GitHub Pages
+```
+
+---
+
+### 5.1.3. Source Code Style Guide & Conventions  
+
+**HTML**
+- Uso de etiquetas semánticas: `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`.  
+- Imágenes con atributo `alt`.  
+- Enlaces relativos y consistentes entre páginas.  
+- Scripts al final del `body` cuando corresponda.  
+
+**CSS**
+- Variables CSS en `:root` (`--color-primario`, `--spacing`, etc.).  
+- Convención de clases en *kebab-case* (`.hero-title`, `.card-grid`).  
+- Layout con Flexbox y/o Grid.  
+- Media queries para puntos de quiebre (`960px`, `760px`, `560px`).  
+- Accesibilidad: estados `:hover`, `:focus-visible`, contraste adecuado.  
+
+**JavaScript (vanilla)**
+- Uso de `const` / `let` (evitar `var`).  
+- Funciones pequeñas y claras.  
+- Separar lógica del DOM cuando sea posible.  
+- Uso moderado de `localStorage` (solo para idioma o preferencias del cliente).  
+
+---
+
+### 5.1.4. Software Deployment Configuration  
+
+Despliegue actual — GitHub Pages (Landing estática):
+
+**Pasos:**
+1. Subir el código al repositorio `Landing-page-FreshSense` en la rama `main`.  
+2. En GitHub: ir a Settings → Pages.  
+3. En Build and deployment, seleccionar Deploy from a branch.  
+4. Elegir Branch: `main` y Folder: `/ (root)`. Guardar.  
+5. Esperar a que GitHub procese el sitio y obtener la URL pública.  
+
+**Landing Page FreshSense:**  
+[https://1asi0729-2520-7357-g4-senseeat.github.io/Landing-page-FreshSense/](https://1asi0729-2520-7357-g4-senseeat.github.io/Landing-page-FreshSense/)
+
+**Validación post-despliegue:**
+- Navegación entre páginas y secciones (`index.html`, beneficios, planes, contacto, etc.).  
+- Verificación de rutas relativas a hojas de estilo, imágenes y scripts.  
+- Pruebas responsive en móvil y escritorio.  
+- Revisión de accesibilidad básica (focus, contraste, alt text).  
+
+## 5.2. Landing Page, Services & Applications Implementation
+### 5.2.1. Sprint 1
+
+#### 5.2.1.1. Sprint Planning 1
+
+En esta sección se especifican los aspectos principales del Sprint Planning Meeting. La estructura a utilizar se presenta a continuación.
+
+| Campo                               | Detalle                                                                                |
+| ----------------------------------- | -------------------------------------------------------------------------------------- |
+| **Date**                            | 2025-09-09                                                                             |
+| **Time**                            | 10:00 AM                                                                               |
+| **Location**                        | Sala virtual – Google Meet                                                             |
+| **Prepared By**                     |  Vega Coronado, Fabricio Samir                                                         |
+| **Attendees (to planning meeting)** | Romina Tuesta Marin / Vega Coronado, Fabricio Samir  / Villanueva Andrade, Ysaac Ligorio / Tumi Oliden, Manuel Ignacio / Valverde Portuguez, Natalia Ximena |
+| **Sprint 1 – 1 Review Summary** | Este es el primer sprint, por lo que no hay resultados anteriores a revisar. El equipo está iniciando el desarrollo de la landing page de FreshSense.|
+| **Sprint 1 – 1 Retrospective Summary** | No aplica, al ser el primer sprint. Se acordó establecer prácticas de comunicación diaria y seguimiento mediante Trello y reuniones cortas cada mañana.|
+
+| Campo                   | Detalle                                                                                                                                                                        |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Sprint 1 Goal**       | Nuestro enfoque está en entregar una versión inicial de la landing page de FreshSense que muestre su propuesta de valor y beneficios principales. Creemos que esto generará claridad y confianza en los usuarios potenciales (jóvenes adultos y pequeños emprendedores de alimentos). Esto se confirmará cuando los visitantes puedan navegar la página, entender la solución y enviar un formulario de contacto. |
+| **Sprint 1 Velocity**   | 26 Story Points (capacidad estimada para este sprint inicial)                                                                                                                  |
+| **Sum of Story Points** | 26 Story Points                                                                                                                                                                |
+
+**User Stories incluidas:**
+
+HU01: Header con logo y nombre de FreshSense (2 SP)
+
+HU02: Descripción breve de la plataforma (3 SP)
+
+HU03: Sección de beneficios (5 SP)
+
+HU04: Formulario de contacto (8 SP)
+
+HU05: Diseño responsive (8 SP)
+
+
+#### 5.2.1.2. Aspect Leaders and Collaborators
+
+
+| Team Member (Last Name, First Name)   | Github Username        | wireframes y MockUps landing |  Visualización beneficios y características | Consultar planes y precios | Formulario de contacto | Sección de testimonios | Despliegue de servicio | Cambio de idioma |
+|-----------|----------------------|-----------|----------------------|-----------|----------------------|-----------|-----------|-----------|
+| Valverde Portuguez Natalia Ximena |        |    (L)   |     (C)     |    (C)      |   (L)   |     (C)     |    (C)      |   (C)      |
+|  Romina Alejanda Tuesta Marin    |     Romimi1     |    (L)   |     (C)     |    (L)      |   (L)   |     (C)     |    (L)      |   (C)      |
+|  Tumi Oliden Manuel Ignacio      |     |      (C)   |     (C)     |    (C)      |   (L)   |     (C)     |    (C)      |   (C)      |
+|  Vega Coronado Fabricio Samir    |     |      (C)   |     (C)     |    (C)      |   (C)   |     (L)     |    (C)      |   (C)      |
+|  Villanueva Andrade Ysaac Ligorio |     |      (C)   |     (C)     |    (C)      |   (L)   |     (C)     |    (C)      |   (L)      |
+
+#### 5.2.1.3. Sprint Backlog 1
+En este sprint se desarrollará y desplegará la Landing Page de EcoTrack, que servirá como punto de presentación del producto. Se crearán las secciones informativas clave (propuesta de valor, explicación del producto, beneficios, planes y precios, formulario de contacto y testimonios), estableciendo así las bases visuales y funcionales del proyecto.
+
+Herramienta de control: Trello
+<img alt="Trello" src="/assets/Trello_sprint1.PNG" /><br>
+URL del Board: https://trello.com/b/ScNLfxb4/sprint1-freshsense
+
+| User Story |                                | Work-Item / Task |                                 |                                                                           |                        |                     |                                                    |
+| ---------- | ------------------------------ | ---------------- | ------------------------------- | ------------------------------------------------------------------------- | ---------------------- | ------------------- | -------------------------------------------------- |
+| **Id**     | **Title**                      | **Id**           | **Title**                       | **Description**                                                           | **Estimation (Hours)** | **Assigned To**     | **Status** (To-do / In-Process / To-Review / Done) |
+| US01       | Visualización propuesta        | T01              | Diseño del mensaje principal    | Redactar y diseñar mensaje principal y valor de la solución               | 3                      | Romina    | Done                                               |
+|            |                                | T02              | Desarrollo del encabezado       | Implementar sección superior con mensaje y valor destacado                | 4                      |   Manuel     | In-Process                                         |
+| US02       | Sección para pequeños negocios | T03              | Contenido de beneficios         | Redactar y diseñar beneficios específicos para emprendedores              | 3                      | Romina | To-Review                                          |
+|            |                                | T04              | Desarrollo de sección           | Implementar sección con beneficios específicos para el perfil emprendedor | 4                      | Natalia    | To-do                                              |
+| US03       | Formulario de contacto         | T05              | Diseño del formulario           | Diseñar formulario simple con campos mínimos requeridos                   | 2                      | Romina    | Done                                               |                                     
+| US04       | CTA para suscripción           | T07              | Diseño del botón CTA            | Diseñar botón llamativo para suscripción o prueba                         | 2                      | Fabricio   | Done                                               |
+|            |                                | T08              | Implementación del botón        | Añadir botón funcional que redirija a formulario o registro de prueba     | 3                      | Fabricio    | To-do                                              |
+| US05       | Compatibilidad móvil           | T09              | Adaptación responsive           | Configurar CSS responsive para toda la landing page                       | 5                      | Ysaac      | In-Process                                         |
+|            |                                | T10              | Pruebas en dispositivos móviles | Realizar pruebas de compatibilidad en distintos tamaños de pantalla       | 3                      | Natalia    | To-do                                              |
+
+#### 5.2.1.4. Development Evidence for Sprint Review
+
+En esta sección se presentan los avances en la implementación de la solución FreshSense, considerando los productos contemplados en el alcance del Sprint: Landing Page. Durante este periodo se trabajó principalmente en el desarrollo de la Landing Page, incorporando mejoras visuales, de usabilidad y funcionalidad. Entre los principales avances se encuentran la creación de la página principal, la integración de estilos y animaciones, la optimización del comportamiento de la navegación y la incorporación de nuevas funciones interactivas.
+
+A continuación, se detallan los commits realizados en los repositorios vinculados a la implementación:
+
+| Repository |   Branch    | Commit Id |  Commit Message  |   Commit Message Body    |   Commited on (Date)  |        
+| ---------- | ----------- | --------- | ---------------- | ------------------------ | --------------------- | 
+| Romini1/github.com/1ASI0729-2520-7357-G4-SenseEat/Landing-page-FreshSense/tree/develop | develop     |   d201420  |    chore: upload initial landingpage    |  Se creó el archivo index.html, css y main.js como la página principal de la landing, estructurando la base inicial del proyecto.                        |    18/09/25     | 
+| YsaacVillanueva/github.com/1ASI0729-2520-7357-G4-SenseEat/Landing-page-FreshSense/tree/develop | develop     |  e44f923  |    feat: add translate.js        | Se creó la funcionalidad dinámica del cambio de idioma en la landing                         |    19/09/25     | 
+| ManuelTumi2224/github.com/1ASI0729-2520-7357-G4-SenseEat/Landing-page-FreshSense/tree/develop  | develop     |  c5cfc27   |  feat: Updated Footer and Plans |  Se actualizó la sección planes y subscripciones            |   19/09/25       | 
+| YsaacVillanueva/github.com/1ASI0729-2520-7357-G4-SenseEat/Landing-page-FreshSense/tree/develop | develop     |  827e63c |    Merge pull request #1 from 1ASI0729-2520-7357-G4-SenseEat/feature/sprint1-Ysaac         |   Se hizo un merge y pull request opara las secciones actualizadas en todos los archivos         |     19/09/25    | 
+
+
+#### 5.2.1.5. Execution Evidence for Sprint Review
+
+
+Durante este Sprint se avanzó de manera significativa en el desarrollo de la Landing Page del proyecto FreshSense, la cual constituye el primer punto de contacto con los usuarios. Se implementó la estructura base con la página principal, se integraron estilos y animaciones, y se añadieron funcionalidades interactivas como el slider y un scroll más fluido. Asimismo, se realizaron correcciones en la navegación para garantizar una experiencia más clara e intuitiva, además se implementó exitosamente la funcionalidad del cambio de idioma, de español a ingles.
+
+Con estos avances, se ha logrado contar con una primera versión navegable de la landing page, lo que permite mostrar la propuesta de valor de FreshSense y establecer la base para siguientes mejoras visuales y técnicas.
+
+<br>
+
+*Figura 1.* Página principal con navbar y sección de bienvenida.
+
+![Hero](assets/LP_1.PNG) 
+
+
+*Figura 2.* Sección acerca de FreshSense.
+
+![About](assets/LP2.PNG) 
+
+
+*Figura 3.* Sección acerca de beneficios.
+
+![Services](assets/LP_3.PNG) 
+
+
+*Figura 4.* Sección de planes de subscripción.
+
+![Testimonials](assets/LP4.PNG) 
+
+
+*Figura 5.* Sección de testimonios.
+
+![Plans](assets/LP5.PNG) 
+
+
+*Figura 6.* Sección de formulario de contacto.
+
+![Form](assets/LP6.PNG) 
+
+#### Video demostrativo
+
+Se preparó un video donde se ilustra la navegación en la landing page y se explican las funcionalidades desarrolladas en este Sprint:
+![Video_recorrido](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211706_upc_edu_pe/EbiyfxOB6e9FteIuNTOmoioBHUcBXfgY5-pCSjEH9UJx-g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=njAFe7) 
+
+(en caso de que el link no funciones: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211706_upc_edu_pe/EbiyfxOB6e9FteIuNTOmoioBHUcBXfgY5-pCSjEH9UJx-g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=njAFe7)
+
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+En este Sprint, el trabajo realizado se centró en el desarrollo de la Landing Page de FreshSense, implementada únicamente con HTML, CSS y JavaScript. Dado que se trata de una página estática cuyo alcance se limita a la presentación de información y a la interacción en el lado del cliente, no se definieron ni consumieron Web Services.
+
+En consecuencia, durante este Sprint no corresponde la elaboración de documentación con OpenAPI (Swagger), ya que esta herramienta se utiliza exclusivamente para describir y documentar APIs REST que exponen endpoints de un backend. La integración con Web Services y su respectiva documentación será abordada en Sprints posteriores, cuando la solución incluya funcionalidades dinámicas que requieran intercambio de datos entre frontend y backend.
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+Durante este Sprint se avanzó en los procesos de Deployment relacionados con la solución EcoTrack, con el objetivo de asegurar la disponibilidad de los productos desarrollados para su validación y demostración. Dentro de este Sprint, el esfuerzo principal estuvo orientado al despliegue de la Landing Page, que fue implementada con HTML, CSS y JavaScript.
+
+El despliegue se realizó utilizando GitHub Pages, lo que permitió contar con un entorno accesible de manera pública sin necesidad de un proveedor de cloud externo. Esta estrategia fue seleccionada por su facilidad de integración con los repositorios de GitHub y por brindar un proceso automatizado de publicación a partir de la rama develop del proyecto.
+
+Acciones realizadas en el proceso de Deployment
+
+1. Creación y configuración del repositorio en GitHub.
+Se configuró el repositorio ecotrack-landingpage en la cuenta de GitHub del equipo.
+
+2. Configuración de GitHub Pages.
+
+- Se habilitó la opción de GitHub Pages en la sección de Settings.
+
+- Se seleccionó la rama develop como fuente de publicación.
+
+- Se configuró la carpeta raíz del proyecto como directorio base de la publicación.
+
+3. Automatización de despliegue.
+Gracias a la integración nativa de GitHub Pages, cada nuevo commit realizado en la rama develop se despliega automáticamente en la URL pública asignada.
+
+4. Validación del despliegue.
+Se realizó la verificación de la publicación, comprobando que la landing page se visualiza correctamente en la dirección generada por GitHub Pages.
+
+#### Evidencia del Deployment
+
+*Figura 1.* Configuración de GitHub Pages en el repositorio de la landing page.
+
+![dev1](assets/dv_1.PNG) 
+
+
+*Figura 2.* Se ingresó a setting y luego a pages.
+
+![dev2](assets/dv_2.PNG) 
+
+*Figura 3.* seleccionamos la rama en la que se encuentre alojado el proyecto.
+
+![dev3](assets/dv3.PNG) 
+
+
+*Figura 4.* Esperamos la URL autogenerada por githubpages.
+
+![dev4](assets/dv_4.PNG) 
+
+
+#### Link a continuación: 
+
+https://1asi0729-2520-7357-g4-senseeat.github.io/Landing-page-FreshSense/
+
+#### 5.2.1.8. Team Collaboration Insights during Sprint  
+
+La colaboración del equipo se evidenció en la distribución equitativa de tareas y en la constante comunicación a través de reuniones y canales digitales.
+
+Se trabajó con GitHub para la gestión de ramas y pull requests, lo cual permitió mantener la trazabilidad del proyecto y asegurar revisiones por pares antes de integrar código.
+
+Asimismo, se promovió un ambiente de retroalimentación positiva que facilitó la resolución de problemas técnicos.
+
+El nivel de compromiso y coordinación alcanzado fue fundamental para cumplir con los objetivos planteados en este Sprint.
+
+![Colaborations](assets/contri.PNG) 
+
+En la imagen se puede ser a 4 colaboradores, primero, con más commits se encuentra Romina, después se encuentra manuel con la misma cantidad de commits, luego Ysaac y finalmente Fabricio.
+
+
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+Mostramos en este apartado el cuadro correspondiente al Sprint Planning 2 para nuestro startup, donde rescatamos los aspectos más importantes del Sprint Planning Meeting.
+
+<div>
+   <table>
+     <thead>
+       <tr>
+         <th># Número</th>
+         <th>Sprint 2</th>
+       </tr>
+       <tr>
+         <th colspan=2>Sprint Planning Background</th>
+       </tr>
+     </thead>
+     <tr align='center'>
+       <td> Date </td>
+       <td> 2025-10-05 </td>
+     </tr>
+     <tr>
+       <td>Time</td>
+       <td> 1:25PM </td>
+     </tr>
+     <tr>
+       <td>Location</td>
+       <td> Remote mode through the GitHub platform </td>
+     </tr>
+     <tr>
+       <td>Prepared by</td>
+       <td> Vega Coronado, Fabricio Samir </td>
+     </tr>
+     <tr>
+       <td>Attendees</td>
+       <td> Tuesta Marin, Romina <br> Valverde Portuguez, Natalia Ximena <br> Tumi Oliden, Manuel Ignacio <br> Vega Coronado, Fabricio Samir	<br> Villanueva Andrade, Ysaac Ligorio </td>
+     </tr>
+     <tr>
+       <td>Sprint n-1 Review Summary</td>
+       <td> Durante este sprint, el equipo revisó los avances obtenidos en el Sprint 1, especialmente en la implementación de la Landing Page. Se identificaron mejoras necesarias en la estructura del código y la organización de los archivos. También se planificó el inicio del desarrollo de la aplicación web complementaria y la integración con funcionalidades dinámicas.</td>
+     </tr>
+     <tr>
+       <td>Sprint n-1 Retrospective Summary</td>
+       <td>El equipo acordó mantener una mejor gestión del tiempo mediante la asignación semanal de tareas y revisiones intermedias. Se destacó la buena comunicación en Trello y las reuniones virtuales. Se decidió documentar mejor los cambios en los repositorios.</td>
+     </tr>
+      <tr>
+        <td colspan="2"><b>Sprint Goal & User Stories</b></td>
+      </tr>
+      <tr>
+        <td>Sprint 2 Goal</td>
+        <td> Desarrollar la primera versión funcional de la Web Application de FreshSense, que permita gestionar y visualizar datos de usuarios, junto con la mejora visual y técnica de la landing page. </td>
+      </tr>
+      <tr>
+        <td>Sprint 2 velocity</td>
+        <td> 12 </td>
+      </tr>
+      <tr>
+        <td>Sum of Story Points</td>
+        <td> 30 Story Points</td>
+      </tr>
+
+   </table>
+</div>
+
+User Stories incluidas:
+
+- HU06: Creación de la página de registro de usuario (8 SP)
+
+- HU07: Implementación de la página de inicio de sesión (6 SP)
+
+- HU08: Dashboard inicial para usuarios registrados (10 SP)
+
+- HU09: Optimización y refactorización del código del frontend (6 SP)
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+Team Member	GitHub Username	Registro/Login	Dashboard	Optimización Frontend	Documentación	Deployment
+Romina Tuesta	Romimi1	(L)	(C)	(C)	(L)	(C)
+Fabricio Vega	FabricioVegaC	(C)	(L)	(L)	(C)	(L)
+Ysaac Villanueva	YsaacVillanueva	(C)	(L)	(C)	(C)	(C)
+Manuel Tumi	ManuelTumi2224	(L)	(C)	(C)	(C)	(C)
+Natalia Valverde	NataliaValverdeP	(C)	(C)	(L)	(L)	(C)
+
+#### 5.2.2.3. Sprint Backlog 2
+
+Herramienta de control: Trello
+<img alt="Trello" src="/assets/trello-sprint2.PNG" /><br>
+URL del Board: https://trello.com/b/ScNLfxb4/sprint1-freshsense
+
+
+| **User Story** |                                 | **Work-Item / Task** |                                           |                                                                            |                        |                 |                                                    |
+| -------------- | ------------------------------- | -------------------- | ----------------------------------------- | -------------------------------------------------------------------------- | ---------------------- | --------------- | -------------------------------------------------- |
+| **Id**         | **Title**                       | **Id**               | **Title**                                 | **Description**                                                            | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
+| US01           | Monitoreo de alimentos          | T01                  | Monitoreo de alimentos                    | Implementar módulo para registrar y visualizar alimentos en inventario.    | 5                      | Manuel              | To-Do                                              |
+| US02           | Configuración de notificaciones | T02                  | Configuración de notificaciones           | Crear sistema de notificaciones para alertas de estado de alimentos.       | 4                      | Fabrizio              | To-Do                                              |
+| US03           | Registro de alimentos           | T03                  | Registro de nuevos alimentos a inventario | Desarrollar formulario para agregar nuevos alimentos al sistema.           | 6                      | Romina              | In-Process                                         |
+| US04           | Visualización de inventario     | T04                  | Visualización de inventario de alimentos  | Implementar vista que muestre el inventario actual con detalles y alertas. | 5                      | Romina              | In-Review                                          |
+| US05           | Login de usuarios               | T05                  | Login de usuarios                         | Implementar autenticación para acceso seguro al sistema.                   | 3                      | Natalia        | In-Review                                          |
+| US06           | Estado de alimentos             | T06                  | Monitoreo de estado de alimentos          | Mostrar estado actual de alimentos (frescos, próximos a vencer, vencidos). | 4                      | Manuel              | Done                                               |
+| US07           | Alertas anticipadas             | T07                  | Visualización de alertas anticipadas      | Mostrar alertas sobre alimentos próximos a vencer.                         | 3                      | Manuel              | Done                                               |
+| US08           | Sign in de usuarios             | T08                  | Sign in de usuarios                       | Crear e integrar formulario de inicio de sesión funcional.                 | 2                      | Natalia               | Done                                               |
+| US09           | Metas cumplidas                 | T09                  | Visualización de metas cumplidas          | Mostrar progreso del usuario en metas de reducción de desperdicio.         | 3                      | Ysaac               | Done                                               |
+| US10           | Planes de suscripción           | T10                  | Visualización de planes de suscripción    | Implementar vista de planes y beneficios de suscripción.                   | 4                      | Natalia              | Done                                               |
+| US11           | Pantalla inicial                | T11                  | Visualización de pantalla inicial         | Diseñar la pantalla de inicio con acceso a las funciones principales.      | 3                      | Natalia               | Done                                               |
+| US12           | Recetas personalizadas          | T12                  | Generar recetas personalizadas            | Desarrollar sistema para sugerir recetas según los alimentos disponibles.  | 5                      | Fabrizio              | Done                                               |
+| US13           | Reportes personalizados         | T13                  | Generación de reportes personalizados     | Crear módulo de generación de reportes de inventario y alertas.            | 6                      | Ysaac               | Done                                               |
+
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+Below are the members of the SenseEat team with their respective leadership (L) and collaboration (C) roles assigned for the Sprint 2 tasks.
+
+| **Team Member** | **GitHub Username** | **Registro/Login** | **Dashboard** | **Optimización Frontend** | **Documentación** | **Deployment** |
+|------------------|---------------------|--------------------|----------------|----------------------------|-------------------|----------------|
+| **Romina Tuesta** | Romimi1 | (L) | (C) | (C) | (L) | (C) |
+| **Fabricio Vega** | Fabricio1v | (C) | (L) | (L) | (C) | (L) |
+| **Ysaac Villanueva** | YsaacVillanueva | (C) | (L) | (C) | (C) | (C) |
+| **Manuel Tumi** | ManuelTumi2224 | (L) | (C) | (C) | (C) | (C) |
+| **Natalia Valverde** | NataliaValverdeP | (C) | (C) | (L) | (L) | (C) |
+
+
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+En esta sección se presentan los avances en la implementación de la solución FreshSense, considerando los productos contemplados en el alcance del Sprint: FrontEnd. Durante este periodo se trabajó principalmente en el desarrollo de la Landing Page, incorporando mejoras visuales, de usabilidad y funcionalidad. Entre los principales avances se encuentran la creación de la página principal, la integración de estilos y animaciones, la optimización del comportamiento de la navegación y la incorporación de nuevas funciones interactivas.
+
+A continuación, se detallan los commits realizados en los repositorios vinculados a la implementación:
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| ---------- | ----------- | --------- | ---------------- | ------------------------ | --------------------- |
+| NatValverde15/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | 2c378f2 | feat: create code in bounded context accounts. | Se desarrolló el código base del contexto “Accounts”, incluyendo las entidades y casos de uso principales. | 07/10/25 |
+| Fabriciovb/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | b1ff772 | feat: update initial dashboard | Se actualizó el dashboard inicial con nuevos componentes y organización visual. | 08/10/25 |
+| YsaacVillanueva/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | 8fb4aec | feat: reports and achievements | Se añadieron los módulos de reportes y logros al sistema. | 08/10/25 |
+| YsaacVillanueva/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | 78880e7 | fix: update achievements | Se corrigieron errores en la lógica de logros del módulo de reportes. | 08/10/25 |
+| ManuelTumi2224/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | 13e0892 | feat: Created Alerts and Monitoring | Se implementó el módulo de alertas y monitoreo de datos. | 08/10/25 |
+| NatValverde15/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | 859fc1d | Merge remote-tracking branch 'origin/feature/sprint2-Ysaac' into feature/sprint2-Nat | Se fusionaron los avances del módulo de login y register con el contexto de cuentas. | 08/10/25 |
+| NatValverde15/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | 1ae2131 | feat: create code in register view and login view of bounded context accounts | Se crearon las vistas y lógica de registro e inicio de sesión del contexto “Accounts”. | 08/10/25 |
+| NatValverde15/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | 894fe3a | feat: create code in payment view and plan view of bounded context billing | Se añadieron las vistas de planes y pagos dentro del contexto “Billing”. | 08/10/25 |
+| NatValverde15/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | b3c20e5 | feat: create code in settings view of bounded context accounts | Se implementó la vista de configuración del usuario dentro del contexto “Accounts”. | 08/10/25 |
+| Fabriciovb/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | 9bcc67c | feat: update settings, i18n and small adjustments | Se mejoraron configuraciones y se implementó soporte multilenguaje (i18n). | 08/10/25 |
+| Fabriciovb/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | a961b8e | feat: update all recipes and db.json | Se actualizó la base de datos local (db.json) y recetas del sistema. | 09/10/25 |
+| ManuelTumi2224/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | d58fb33 | docs: Updated Diagrams | Se actualizaron los diagramas UML del sistema y sus interacciones. | 09/10/25 |
+| ManuelTumi2224/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | e861140 | docs: Updated Members and versions | Se actualizó la lista de miembros y versiones en la documentación del proyecto. | 09/10/25 |
+| ManuelTumi2224/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | 0e60dfe | Merge pull request #36 from 1ASI0729-2520-7357-G4-SenseEat/feature/sprint2-Manuel | Se integraron cambios de documentación y mejoras generales del sprint 2. | 09/10/25 |
+| ManuelTumi2224/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | f8f5f93 | Merge pull request #42 from 1ASI0729-2520-7357-G4-SenseEat/feature/sprint2-Manuel | Se integró la rama del sprint 2 con los últimos ajustes al branch develop. | 10/10/25 |
+| ManuelTumi2224/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | d58fb33 | docs: Updated Diagrams | Se actualizaron los diagramas UML del sistema y sus interacciones. | 09/10/25 |
+| ManuelTumi2224/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | e861140 | docs: Updated Members and versions | Se actualizó la lista de miembros y versiones en la documentación del proyecto. | 09/10/25 |
+| ManuelTumi2224/github.com/1ASI0729-2520-7357-G4-SenseEat/tree/develop | develop | 0e60dfe | Merge pull request #36 from 1ASI0729-2520-7357-G4-SenseEat/feature/sprint2-Manuel | Se integraron cambios de documentación y mejoras generales del sprint 2. | 09/10/25 |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+Lo que se logró para este Sprint 2 es el peliegue de la primera versión de la aplicación web. En esta logramos desarrollar el dashboard, footer, la vista principal, food inventory, recipes, food monitoring, alertas, metodo de pago, login, register, ajustes y planes. Esto fue realizado mediante la aplicacion webStorm y su complemento de git, con esto cada integrante pudo realizar cambios y versiones en sus ramas para luego mandarlas a la rama principal y no tener ningun inconveniente. A continuación se mostrarán las evidencias de ejecución.
+
+Iniciar sesion:
+![alt text](assets/iniciarSesionFS.jpg)
+
+Registro:
+![alt text](assets/registerFS.jpg)
+
+Metodo de pago:
+![alt text](assets/metodoPago.jpg)
+
+Home:
+![alt text](assets/home.jpg)
+
+Food inventory:
+![alt text](assets/foodInventory.jpg)
+
+Food monitoring:
+![alt text](assets/foodMonitoring.jpg)
+
+Alerts:
+![alt text](assets/Alerts.jpg)
+
+Recipes:
+![alt text](assets/Recipes.jpg)
+
+Reports:
+![alt text](assets/reports.jpg)
+
+Achievement:
+![alt text](assets/achievement.jpg)
+
+Settings:
+![alt text](assets/settings.jpg)
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la lista de los endpoints documentados. A continuación se presenta el proyecto que muestra el despliegue de la web.
+
+Service:
+![alt text](assets/JsonServer.jpg)
+
+Deployment:
+![alt text](assets/DeployVercer.jpg)
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+Link hacia el deployment: https://front-end-fresh-sense.vercel.app/
+
+Iniciar sesion:
+![alt text](assets/loginDeploy.jpg)
+
+Registro:
+
+Metodo de pago:
+![alt text](assets/metodoPagoDeploy.jpg)
+
+Home:
+![alt text](assets/home.jpg)
+
+Food inventory:
+![alt text](assets/foodInventoryDeploy.jpg)
+
+Register food:
+![alt text](assets/registrarFoodDeploy.jpg)
+
+Food monitoring:
+![alt text](assets/monitoreoDeploy.jpg)
+
+Alerts:
+![alt text](assets/alertsDeploy.jpg)
+
+Recipes:
+![alt text](assets/recipesDeploy.jpg)
+
+Reports:
+![alt text](assets/reports.jpg)
+
+Achievement:
+![alt text](assets/achievement.jpg)
+
+Settings:
+![alt text](assets/settingsDeploy.jpg)
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+El equipo mantuvo una colaboración constante y una comunicación efectiva a través de plataformas como Meet y Discord. Se implementaron tableros Kanban para el control del progreso y ramas por funcionalidad para gestionar los cambios de forma ordenada. Cada integrante asumió responsabilidades definidas y brindó apoyo en las revisiones, lo que facilitó alcanzar las metas del sprint sin contratiempos.
+
+![alt text](assets/usersCommits.jpg)
+
+![alt text](assets/lineCommits.jpg)
+
+# 5.2.3. Sprint 3
+
+## 5.2.3.1. Sprint Planning 3
+Mostramos en este apartado el cuadro correspondiente al Sprint Planning 2 para nuestro startup, donde rescatamos los aspectos más importantes del Sprint Planning Meeting.
+
+<div>
+   <table>
+     <thead>
+       <tr>
+         <th># Número</th>
+         <th>Sprint 3</th>
+       </tr>
+       <tr>
+         <th colspan=2>Sprint Planning Background</th>
+       </tr>
+     </thead>
+     <tr align='center'>
+       <td> Date </td>
+       <td> 2025-11-08 </td>
+     </tr>
+     <tr>
+       <td>Time</td>
+       <td> 2:05PM </td>
+     </tr>
+     <tr>
+       <td>Location</td>
+       <td> Remote mode through the GitHub platform </td>
+     </tr>
+     <tr>
+       <td>Prepared by</td>
+       <td> Vega Coronado, Fabricio Samir </td>
+     </tr>
+     <tr>
+       <td>Attendees</td>
+       <td> Tuesta Marin, Romina <br> Valverde Portuguez, Natalia Ximena <br> Tumi Oliden, Manuel Ignacio <br> Vega Coronado, Fabricio Samir	<br> Villanueva Andrade, Ysaac Ligorio </td>
+     </tr>
+     <tr>
+       <td>Sprint n-2 Review Summary</td>
+       <td> Durante la revisión del Sprint 2 se validó la estructura base de la Web Application, incluyendo 
+        los primeros componentes funcionales, el enrutamiento principal y la integración inicial con 
+        servicios simulados. La Landing Page fue mejorada en diseño y responsividad. También se corrigieron 
+        problemas de navegación, estilos inconsistentes y ajustes de arquitectura sugeridos por el profesor.</td>
+     </tr>
+     <tr>
+       <td>Sprint n-1 Retrospective Summary</td>
+       <td>El equipo acordó mantener una mejor gestión del tiempo mediante la asignación semanal de tareas y revisiones intermedias. Se destacó la buena comunicación en Trello y las reuniones virtuales. Se decidió documentar mejor los cambios en los repositorios.</td>
+     </tr>
+      <tr>
+        <td colspan="2"><b>Sprint Goal & User Stories</b></td>
+      </tr>
+      <tr>
+        <td>Sprint 3 Goal</td>
+        <td> Desarrollar la segunda versión funcional de la Web Application de FreshSense, que permita gestionar y visualizar datos de usuarios, junto con la mejora visual y técnica de la landing page. </td>
+      </tr>
+      <tr>
+        <td>Sprint 2 velocity</td>
+        <td> 12 </td>
+      </tr>
+      <tr>
+        <td>Sum of Story Points</td>
+        <td> 28 Story Points</td>
+      </tr>
+
+   </table>
+</div>
+
+## 5.2.3.2. Aspect Leaders and Collaborators
+
+En esta sección se incluye la elaboración de el artefacto Leadership-andCollaboration Matrix (LACX), con este metodología se dará a cononcer quién es el líder y quiénes lo apoyaran con el rol de colaboradores para este entregable del Sprint 3.
+
+| Team Member (Last Name, First Name)     | GitHub Username    | Notifications | MONITORING | PREFERENCES | ANALYTICS | SUBSCRIPTIONS |
+|-----------------------------------------|--------------------|-----|------------|-------------|-----------|---------------|
+| Vega Coronado, Fabricio Samir           | Fabricio1v         | L   | C          | C           | C         | C             |
+| Tumi Oliden, Manuel Ignacio             |ManuelTumi2224      | C   | C          | C           | L         | C             |
+| Villanueva Andrade, Ysaac Ligorio       | YsaacVillanueva    | C   | C          | L           | C         | C             |
+| Valverde Portuguez, Natalia Ximena      | NataliaValverdeP   | C   | C          | C           | C         | L             |
+| Tuesta Marin, Romina Alejandra          | Romimi1	           | C   | L          | C           | C         | C             |
+
+## 5.2.3.3. Sprint Backlog 3
+
+Nuestro objetivo principal sprint 3 es realizar la segunda version de la aplicacion web por parte del frontend y la primera version de el backend, culminando con todas las vistas principales que contiene diferentes componentes para el análisis y las operaciones de nuestros clientes.
+
+![trello](assets/sprint3-bcklg.PNG)
+
+URL del Board: https://trello.com/b/ScNLfxb4/sprint1-freshsense
+
+| User Story | Title                            | Task Id | Task Title                   | Description                                                 | Estimation | Assigned To | Status     |
+| ---------- | -------------------------------- | ------- | ---------------------------- | ----------------------------------------------------------- | ---------- | ----------- | ---------- |
+| US03       | Formulario de contacto           | T04     | Implementación general       | Implementar formulario simple con validación                | 4          | Natalia     | To-Do      |
+| US04       | CTA para suscripción             | T05     | Botón CTA                    | Implementar botón llamativo y funcional                     | 4          | Natalia     | To-Do      |
+| US10       | Registro automático de alimentos | T11     | Registro por voz/escaner     | Implementar reconocimiento de voz y escáner                 | 5          | Manuel      | To-Do      |
+| US11       | Edición de inventario            | T12     | Editar inventario            | Modificar cantidad y fechas de alimentos                    | 6          | Romina      | To-Do      |
+| US15       | Tutorial interactivo             | T16     | Tutorial UX                  | Implementar tutorial inicial                                | 5          | Ysaac       | To-Do      |
+| US22       | Sincronización smart fridges     | T23     | Integración IoT              | Integrar fridges inteligentes                               | 6          | Fabricio    | To-Do      |
+| US24       | Notificaciones personalizadas    | T25     | Preferencias                 | Permitir personalizar notificaciones                        | 5          | Fabricio    | Done       |
+| US25       | Logros y recompensas             | T26     | Sistema de logros            | Otorgar puntos y badges                                     | 6          | Manuel      | Done       |
+| US26       | Compartir en redes               | T27     | Social share                 | Compartir logros en redes                                   | 4          | Ysaac       | Done       |
+| US27       | Retos y competencias             | T28     | Retos                        | Registrar, ranking y salida                                 | 5          | Ysaac       | Done       |
+| US28       | Categorías personalizadas        | T29     | Categorías                   | Crear y asignar categorías                                  | 6          | Natalia     | To-Do      |
+| US29       | Historial de consumo             | T30     | Historial                    | Registro, filtros y exportación                             | 4          | Manuel      | To-Do      |
+| US30       | Sugerencias de compra            | T31     | Recomendaciones              | Generar sugerencias basadas en consumo                      | 4          | Ysaac       | To-Do      |
+
+
+## 5.2.3.4. Development Evidence for Sprint Review
+
+
+| Repository                                                                             | Branch | Commit Id | Commit Message                                                          | Commit Message Body                                                      | Committed on (Date) |
+| -------------------------------------------------------------------------------------- | ------ | --------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------- |
+| YsaacVillanueva/github.com/1ASI0729-2520-7357-G4-SenseEat-BackEnd-FreshSense/tree/main | main   | 3b2967e   | feat: upload bounded                                                    | Carga del contexto acotado                                               | Nov 15, 2025        |
+| YsaacVillanueva/github.com/1ASI0729-2520-7357-G4-SenseEat-BackEnd-FreshSense/tree/main | main   | d6243c2   | feat: creation all bounded context and backend integration with postman | Creación de todos los bounded contexts e integración backend con Postman | Nov 15, 2025        |
+| YsaacVillanueva/github.com/1ASI0729-2520-7357-G4-SenseEat-BackEnd-FreshSense/tree/main | main   | 46423e7   | feat: update pom.xml to add necessary dependencies                      | Se añadieron dependencias: JPA, validation, web, security, JWT           | Nov 15, 2025        |
+| YsaacVillanueva/github.com/1ASI0729-2520-7357-G4-SenseEat-BackEnd-FreshSense/tree/main | main   | d146efb   | first commit                                                            | Primer commit del repositorio backend                                    | Nov 15, 2025        |
+| NatValverde15/github.com/1ASI0729-2520-7357-G4-SenseEat/FrontEnd-FreshSense | main   | 5d683cd   | Merge pull request #9 from feature/sprint3-Natalia | Integración de cambios del sprint3-Natalia al branch main | Nov 16, 2025 |
+| NatValverde15/github.com/1ASI0729-2520-7357-G4-SenseEat/FrontEnd-FreshSense | main   | 66533d9   | feat: fix and update                               | Ajustes y actualizaciones generales                       | Nov 16, 2025 |
+| NatValverde15/github.com/1ASI0729-2520-7357-G4-SenseEat/FrontEnd-FreshSense | main   | 11352d9   | feat: fix and update                               | Cambios menores y correcciones                            | Nov 16, 2025 |
+
+## 5.2.3.5. Execution Evidence for Sprint Review
+Se mejoró el DashBoard. Ahora se muestra el nombre del usuario. Además, cuando hay una cuenta iniciada aparece el botón "Logout" en la esquina superior derecha
+![Mejora 1](assets/Mejoras1.png)
+
+En reportes, se añadió un historial de consumo descargable con rangos de fechas.
+![Mejora 2](assets/Mejora2.png)
+
+Se agregó el botón de compartir en Logros. Esto comparte una imagen del logro a través de la red social de tu elección
+![Mejora 3](assets/Mejoras3.png)
+
+Se agregó Challenge y ranking entre usuarios logueados. Para motivar a los usuarios.
+![Mejora 4](assets/Mejoras4.png)
+
+Se agregó la opción de agregar productos al inventario a través de la voz
+![Mejora 5](assets/Mejoras5.png)
+
+Dentro de Settings en Notificaciones se agregó la opción de Notificaciones Personalizadas
+![Mejoras 6](assets/Mejoras6.png)
+
+Del mismo modo, dentro de Settings en Integrations se agregó la opción de integración con Smart Fridges
+![Mejoras 7](assets/Mejoras7.png)
+
+link a front desplegado: https://front-end-fresh-sense.vercel.app/
+
+## 5.2.3.6. Services Documentation Evidence for Sprint Review
+| Método | Endpoint        | Descripción                             |
+|--------|-----------------|------------------------------------------|
+| POST    | /api/accounts/register  | Agrega un usuario   |
+
+## 5.2.3.7. Software Deployment Evidence for Sprint Review
+![POSTMAN](assets/POSTMAN.png)
+![MySQL](assets/MYSQL.png)
+## 5.2.3.8. Team Collaboration Insights during Sprint
+Avance este ultimo trabajo Backend y Frontend
+![Front](assets/FrontEndColaboration.png)
+![Back](assets/BackEndColaboration.png)
+
+# 5.2.4. Sprint 4
+
+## 5.2.4.1. Sprint Planning 4
+Mostramos en esta parte final el cuadro correspondiente al Sprint Planning 4 para nuestro startup, donde nos enfocamos en los aspectos más importantes del Sprint Planning Meeting.
+
+<div>
+   <table>
+     <thead>
+       <tr>
+         <th># Número</th>
+         <th>Sprint 4</th>
+       </tr>
+       <tr>
+         <th colspan=2>Sprint Planning Background</th>
+       </tr>
+     </thead>
+     <tr align='center'>
+       <td> Date </td>
+       <td> 2025-11-25 </td>
+     </tr>
+     <tr>
+       <td>Time</td>
+       <td> 12:00PM </td>
+     </tr>
+     <tr>
+       <td>Location</td>
+       <td> Remote mode through the GitHub platform </td>
+     </tr>
+     <tr>
+       <td>Prepared by</td>
+       <td> Vega Coronado, Fabricio Samir </td>
+     </tr>
+     <tr>
+       <td>Attendees</td>
+       <td> Tuesta Marin, Romina <br> Valverde Portuguez, Natalia Ximena <br> Tumi Oliden, Manuel Ignacio <br> Vega Coronado, Fabricio Samir	<br> Villanueva Andrade, Ysaac Ligorio </td>
+     </tr>
+     <tr>
+       <td>Sprint n-3 Review Summary</td>
+       <td> Durante este sprint, el equipo revisó los avances obtenidos en el Sprint 3, especialmente en la implementación del backend. Se identificaron mejoras necesarias en la estructura del código de la última versión del frontend para conectar al backend. También se planificó el inicio del desarrollo de bounded context restantes del backend para la integración con funcionalidades dinámicas en conjunto con el frontend. </td>
+     </tr>
+     <tr>
+       <td>Sprint n-3 Retrospective Summary</td>
+       <td>El equipo acordó mantener una mejor gestión del tiempo para la preparación de bounded context restantes. Se destacó la buena comunicación con reuniones virtuales. Se decidió documentar mejor los cambios en los repositorios.</td>
+     </tr>
+      <tr>
+        <td colspan="2"><b>Sprint Goal & User Stories</b></td>
+      </tr>
+      <tr>
+        <td>Sprint 4 Goal</td>
+        <td> Desarrollar la version final de frontend, backend y API de FreshSense junto a su integración, que permita ser una app funcional y registre todo en la base datos. </td>
+      </tr>
+      <tr>
+        <td>Sprint 4 velocity</td>
+        <td> 16 </td>
+      </tr>
+      <tr>
+        <td>Sum of Story Points</td>
+        <td> 17 Story Points</td>
+      </tr>
+
+   </table>
+</div>
+
+## 5.2.4.2. Aspect Leaders and Collaborators
+
+| Team Member       | GitHub Username   | Desarrollo Backend | Conexión API Externa | Pruebas DB | Conexión al Front |
+|-------------------|-------------------|--------------------|-----------------------|------------|--------------------|
+| Romina Tuesta     | Rominni           |  (C)            |  (C)               | (C)        | (C)                |
+| Fabricio Vega     | FabricioVegac     |  (L)            |  (C)               | (L)        | (L)                |
+| Ysaac Villanueva  | YsaacVillanueva   |  (L)            |  (C)               | (C)        | (C)                |
+| Manuel Tumi       | ManuelTumi2224    |  (C)            |  (C)               | (C)        | (C)                |
+| Natalia Valverde  | NataliaValverdeP  |  (C)            |  (L)               | (L)        | (C)                |
+
+
+## 5.2.4.3. Sprint Backlog 4
+Nuestro objetivo principal sprint 4 es realizar la segunda version de la aplicacion web por parte del frontend y la primera version del backend, culminando con todas las vistas principales que contiene diferentes componentes para el análisis y las operaciones de nuestros clientes.
+
+A continuación se puede observar la herramienta trello, utilizada para la organización del sprint 4:
+![imagen sprint 4](assets/sprint4.PNG)
+
+
+| User Story | Title                           | Task Id | Task Title                   | Description                                                     | Estimation | Assigned To | Status |
+| ---------- | -------------------------------- | ------- | ---------------------------- | --------------------------------------------------------------- | ---------- | ----------- | ------ |
+| US24       | Notificaciones personalizadas    | T24     | Notificaciones personalizadas | Implementar sistema de envío y configuración de notificaciones | 5          | Manuel          | Done   |
+| US25       | Logros y recompensas             | T25     | Logros y recompensas          | Crear sistema de puntos, badges y progreso                     | 6          | Manuel          | Done   |
+| US31       | Visualización de pantalla inicial| T31     | Pantalla inicial              | Diseñar y mostrar vista principal para el usuario              | 4          | Fabricio          | Done   |
+| US28       | Categorías personalizadas        | T28     | Categorías personalizadas     | Permitir crear y editar categorías propias                     | 5          | Fabricio          | Done   |
+| US15       | Tutorial interactivo             | T15     | Tutorial interactivo          | Implementar walkthrough guiado para nuevos usuarios            | 6          | Manuel | Done  |
+| US29       | Historial de consumo             | T29     | Historial de consumo          | Mostrar consumo, filtros y comportamiento del usuario          | 5          | Ysaac          | Done   |
+| US11       | Edición de inventario            | T11     | Edición de inventario         | Editar cantidades, fechas y estado del inventario              | 6          | Romina          | Done   |
+| US03       | Formulario de contacto           | T03     | Formulario de contacto        | Implementar formulario simple con validación                   | 4          | Natalia          | Done   |
+
+
+
+## 5.2.4.4. Development Evidence for Sprint Review
+
+| Repository                                                                            | Branch | Commit Id | Commit Message                                                    | Commit Message Body                                                                             | Committed on (Date) |
+|---------------------------------------------------------------------------------------| ------ |-----------|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------|
+| Fabricio1v/github.com/1ASI0729-2520-7357-G4-SenseEat-BackEnd-FreshSense/tree/main     | main   | c7ef31b   | feat: new recipes and connect. api                                | Creación de data recetas en base de datos y conexión por medio de API.                          | Dec 01, 2025      |
+| ManuelTumi2244/github.com/1ASI0729-2520-7357-G4-SenseEat-BackEnd-FreshSense/tree/main | main   | 617f372   | feat: Created Endpoints and connections API with FrontEnd.        | Creación de los endpoints e integración con el frontend.                                        | Dec 01, 2025      |
+| NatValverde15/github.com/1ASI0729-2520-7357-G4-SenseEat-BackEnd-FreshSense/tree/main  | main   | 57de99c   | feat: configurate alert bounded context                           | Configurar bounded context alert para cargar la base de datos.                                  | Dec 02, 2025      |
+| ManuelTumi2244/github.com/1ASI0729-2520-7357-G4-SenseEat-FrontEnd-FreshSense/main     | main   | 54354c0   | feat: Modified User registers and Inventory                       | Modificar registro de usuarios e inventario con el API para que se guarde allí un registro nuevo. | Dec 01, 2025      |
+| Fabricio1v/github.com/1ASI0729-2520-7357-G4-SenseEat-FrontEnd-FreshSense/main         | main   | 75799d2   | feat: update on .json and recipes                                 | Actualizar archivo json y bounded context recetas.                                              | Dec 01, 2025      |
+| NatValverde15/github.com/1ASI0729-2520-7357-G4-SenseEat-FrontEnd-FreshSense/main      | main   | af9f8f5   | feat: configurate alert bounded context                           | Actualizar bounded context alert para jalar base de datos.                                      | Dec 02, 2025      |
+| YsaacVillanueva/github.com/1ASI0729-2520-7357-G4-SenseEat-BackEnd-FreshSense/tree/main    | main   | 46423e7   | feat: update bounded context and backend integration with postman | Actualizar bounded context e integración completa de Postman.                                   | Dec 01, 2025      |
+
+## 5.2.4.5. Execution Evidence for Sprint Review
+
+Se mejoró el backend culminando los demás bounded context.  
+![Mejora BackEnd](assets/MejoraBackend.png)
+
+Se editó el frontend para obtener la data de la base de datos con el API y también registrar en ella.
+Primero una vez que se registra un usuario automáticamente se registra en la tabla users. Todo lo que se encuentre en esa tabla son los usuarios permitidos para iniciar sesión.
+![Mejora Register](assets/MejoraRegister.png)
+
+Una vez ingresas al dashboard el nombre con el que te registraste aparecerá en el mensaje de bienvenida. También aparece sus datos en Settings Profile.
+![Mejora Dashboard](assets/MejoraDashboard.png)
+![Mejora Settings](assets/MejoraSettings.png)
+
+En inventario puedes ver los datos de la tabla products de la base de datos, y si ingresas un nuevo producto por el app aparecerá en la base de datos registrado.
+![Mejora Inventario1](assets/MejoraInventario1.png)
+![Mejora Inventario2](assets/MejoraInventario2.png)
+
+En otros bounded context como Alerts se hizo que lo que aparezcan en la base de datos se visualizarán en la aplicación.
+![Mejora Alerts](assets/MejoraAlerts.png)
+
+## 5.2.4.6. Services Documentation Evidence for Sprint Review
+
+| Módulo     | Acción                                   | Método | Endpoint          | Parámetros / Path                           | Body (Ejemplo)                                                                                                                                                 | Response (Ejemplo)                                                                                                                                                                      | URL                                    |
+|------------|-------------------------------------------|--------|-------------------|----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
+| Auth       | Registrar usuario                         | POST   | /auth/register    | —                                            | { "fullName": "Natalia Valverde", "email": "natalia@gmail.com", "password": "123456", "role": "USER" }                                                         | { "id": 1, "fullName": "Natalia Valverde", "email": "natalia@gmail.com", "role": "USER" }                                                                                              | http://localhost:8080/auth/register     |
+| Auth       | Iniciar sesión                            | POST   | /auth/login       | —                                            | { "email": "natalia@gmail.com", "password": "123456" }                                                                                                         | { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." }                                                                                                                                  | http://localhost:8080/auth/login        |
+| Products   | Listar productos                          | GET    | /products         | —                                            | —                                                                                                                                                              | [ { "id": 1, "name": "Manzana", "category": "Fruit", "description": "Fresca", "imageUrl": "https://img.com/apple.jpg", "quantity": 10 } ]                                           | http://localhost:8080/products          |
+| Products   | Crear producto                            | POST   | /products         | —                                            | { "name": "Yogurt Natural", "category": "Dairy", "description": "Sin azúcar", "imageUrl": "https://img.com/yogurt.jpg", "quantity": 5 }                        | { "id": 12, "name": "Yogurt Natural", "category": "Dairy", "description": "Sin azúcar", "imageUrl": "https://img.com/yogurt.jpg", "quantity": 5 }                                      | http://localhost:8080/products          |
+| Alerts     | Listar alertas                            | GET    | /alerts           | —                                            | —                                                                                                                                                              | [ { "id": 3, "title": "Temperatura alta", "message": "Sensor 2 marcó 34°C", "severity": "HIGH", "source": "Sensor 2", "state": "ACTIVE", "timeAgo": "1 minute ago" } ]                | http://localhost:8080/alerts            |
+| Recipes    | Listar recetas                            | GET    | /recipes          | —                                            | —                                                                                                                                                              | [ { "id": 5, "title": "Tacos de Asada", "rating": 5, "level": "medium", "time": "30 min", "type": "mexican", "imageUrl": "https://img.com/tacos.jpg" } ]                             | http://localhost:8080/recipes           |
+| Recipes    | Obtener receta por ID                     | GET    | /recipes/{id}     | { "id": 1 }                                  | —                                                                                                                                                              | { "id": 1, "title": "Pasta Alfredo", "description": "Pasta con salsa cremosa", "ingredients": ["Pasta","Queso","Crema"], "steps": ["Hervir pasta","Preparar salsa","Servir"] }       | http://localhost:8080/recipes/1         |
+| Recipes    | Crear receta completa                     | POST   | /recipes          | —                                            | { "title": "Panqueques", "description": "Suaves con miel", "imageUrl": "https://img.com/pancakes.jpg", "level": "easy", "rating": 4, "time": "15 min", "type":"breakfast", "ingredients":["Harina","Leche","Huevo"], "steps":["Mezclar ingredientes","Cocinar","Servir"] } | { "id": 20, "title": "Panqueques", "rating": 4, "level": "easy" }                                                                                                                     | http://localhost:8080/recipes           |
+ 
+## 5.2.4.7. Software Deployment Evidence for Sprint Review
+
+Durante este Sprint 4, el equipo desplegó el Backend API REST de FreshSense. El despliegue se realizó de la siguiente manera:
+
+Herramientas y plataformas utilizadas
+Git: Se utilizó para control de versiones, permitiendo ver cada cambio en el código fuente del backend.
+GitHub: Se creó y configuró el repositorio oficial para el backend, lo que facilita la colaboración del equipo y el seguimiento de los cambios realizados segun bounded contexts.
+MySQL: Base de datos relacional configurada y conectada mediante Entity Framework Core para la persistencia de datos.
+Swagger/OpenAPI: Documentación interactiva de la API desplegada junto con el servicio, permitiendo probar los endpoints directamente desde el navegador.
+
+![Mejora BackEnd](assets/MejoraBackend.png)
+![Mejora Schemas](assets/MejoraSchemas.png)
+![Mejora AlertsControllers](assets/MejoraAlertsControllers.png)
+![Mejora RecipesControllers](assets/MejoraRecipesControllers.png)
+![Mejora ProductsControllers](assets/MejoraProductsControllers.png)
+![Mejora AuthControllers](assets/MejoraAuthControllers.png)
+
+## 5.2.4.8. Team Collaboration Insights during Sprint
+
+Para el sprint 4 se obtuvo el siguiente informe de participación y colaboración en la parte del desarrollo del backend:
+
+![Contibuidores sprint4](assets/Contributors_sprint4.PNG)
+
+
+# 5.3. Validation Interviews
+
+## 5.3.1. Diseño de Entrevistas
+Estas preguntas están orientadas a validar la experiencia visual y la usabilidad del frontend ya implementado de FreshSense. Buscan evaluar si la interfaz cumple con los principios de claridad, estética moderna, estructura consistente y confianza, elementos críticos en un producto tecnológico que combina hardware y software.
+
+## Segmento 1:
+### Adultos jóvenes
+
+#### 1. Primera Impresión
+- ¿Qué te pareció el diseño general de la página? 
+- ¿La estética te resulta moderna, atractiva y acorde al estilo de FreshSense? 
+- ¿Consideras que la paleta de colores y los iconos ayudan a entender la información sin confundirte? 
+
+#### 2. Claridad de la información
+- ¿El tamaño de letra, espaciado y organización del contenido te hicieron la lectura cómoda? 
+- ¿Las secciones están bien diferenciadas y explican bien su contenido
+
+#### 3. Experiencia de uso
+- ¿El frontend transmite confianza y profesionalismo suficiente como para considerar usar el producto?
+## Segmento 2: 
+### Pequeños negocios / emprendedores de alimentos caseros
+
+#### 1. Primera impresión
+- ¿Qué fue lo primero que pensaste al ver o probar la aplicación?
+- ¿Qué parte te pareció más útil o interesante para tu negocio?
+
+#### 2. Facilidad de uso
+- ¿Qué tan fácil te resultó usar la app? (1 Muy difícil – 5 Muy fácil)
+- ¿Hubo algo que te haya resultado confuso o poco claro?
+
+#### 3. Aplicación en tu negocio
+- ¿Crees que esta app te ayudaría a tener un mejor control de tus insumos o evitar pérdidas? ¿Por qué?
+- ¿Qué función consideras más práctica: las alertas, los reportes, el registro de productos o el control de estados?
+- Si la usas con frecuencia, ¿qué beneficio principal esperas obtener? (Ej. ahorrar tiempo, mejorar control, evitar desperdicios, mejorar calidad)
+
+#### 4. Valor y percepción
+- ¿Qué tan importante es para ti mantener la calidad y frescura de tus productos?
+- ¿Estarías dispuesta a pagar por una app que te ayude con eso?
+
+#### 5. Uso y recomendación
+- ¿Con qué frecuencia crees que la usarías? (Diario / Semanal / Ocasionalmente)
+- ¿La recomendarías a otros emprendedores o negocios pequeños? ¿Por qué?
+
+#### 6. Opinión final
+- ¿Qué te gustaría que la aplicación hiciera para adaptarse mejor a la forma en que trabajas cada día?
+  
+## 5.3.2. Registro de Entrevistas
+
+### Segmento #1: Adultos jóvenes (25-40 años, dinámicos y ocupados)
+
+ Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 1                     | **Nombre:** Melissa Sulca  <br> **Edad:** 22  <br> **Distrito:** San Miguel <br><br> **Resumen:** Melissa vio la app como una herramienta útil para controlar mejor los ingredientes que usa, evitando el desperdicio. Le pareció fácil aunque requiere mejor legibilidad. Le sorprendió saber de los sensores que manejan la frescura de sus alimentos.Asi mismo, le gustó el hecho de que la aplicación le de recetas que puede preparar según lo que tiene disponible en su refrigerador.| ![Evidencia](assets/ReviewSegmento1.jpeg) <br> [📂 Ver entrevista](https://drive.google.com/file/d/19vsUUBn4T6eB-vFXiMJzUgS3gi7c3HuT/view?usp=sharing) |
+
+### Segmento #2: Pequeños negocios / emprendedores de alimentos caseros
+
+| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 4                     | **Nombre:** Gladys Portuguez  <br> **Edad:** 52  <br> **Distrito:** San Miguel <br><br> **Resumen:** Gladys vio la app como una herramienta útil para evitar desperdicios y controlar mejor los ingredientes que usa cada fin de semana. Le pareció fácil aunque requiere mejor legibilidad. Las alertas y el registro de productos fueron sus funciones favoritas. Da importancia absoluta a la frescura de la comida y usaría la app constantemente, pero necesita que funcione sin internet. | ![Evidencia](assets/segmento2gladys.png) <br> [📂 Ver entrevista](https://drive.google.com/file/d/1lnxNk991o7L4A7Oe8-RH7hhXXqXb6TDR/view?usp=sharing) |
+
+| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 5                     | **Nombre:** Vanessa Choy  <br> **Edad:** 25  <br> **Distrito:** Jesús María <br><br> **Resumen:** Vannessa consideró la app profesional y muy útil para controlar inventario y planificar compras. Le gustaron los reportes y estadísticas porque vende a diario y necesita saber cuánto stock tiene. Valora la frescura de los frutos secos y usaría la app todos los días. No encontró la app confusa y está dispuesta a pagar por una suscripción si incluye funciones avanzadas. | ![Evidencia](assets/segmento2vanessa.png) <br> [📂 Ver entrevista](https://drive.google.com/file/d/1wtwC9srbUrm8J4lgfLQviwWnFiXVL3-H/view?usp=sharing) |
+
+| Número de entrevista | Datos del entrevistado                                                                 | Evidencia de entrevista |
+|-----------------------|-----------------------------------------------------------------------------------------|--------------------------|
+| 6                     | **Nombre:** Rosa Ramos  <br> **Edad:** 42  <br> **Distrito:** Los Olivos <br><br> **Resumen:** Rosa percibe la app como una herramienta moderna y práctica para su negocio de repostería. Valora especialmente las alertas de vencimiento porque maneja insumos delicados y costosos como cremas y frutas. Le resultó muy fácil de usar y considera que la ayudaría a reducir pérdidas y organizar mejor su producción semanal. Le interesa recibir notificaciones y conectarla con su celular. | ![Evidencia](assets/segmento2rosa.png) <br> [📂 Ver entrevista](https://drive.google.com/file/d/17P6tts0iM54OaPlN4nevutPCTTHTKXQC/view?usp=sharing) |
+
+## 5.3.3. Evaluaciones según heurísticas
+
+**CARRERA:** Ingeniería de Software  
+**CURSO:** Aplicaciones open source
+**CLIENTE:** Usuarios vendedores y del día a día
+**AUDITOR:** Equipo del proyecto FreshSense
+
+---
+
+### APP A EVALUAR
+**FreshSense – Plataforma Web para gestión y monitoreo de alimentos**
+
+
+#### Tareas a evaluar:
+
+- El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas principales del sistema:
+
+- Visualización del estado de los alimentos
+
+- Consulta de alertas de caducidad
+
+- Consulta de recetas sugeridas
+
+- Registro automático/manual de alimentos
+
+- Consulta del inventario general
+
+- Consulta del detalle de cada alimento
+
+- Configuración de notificaciones
+
+- Consulta de reportes semanales
+
+- Consulta del impacto ambiental
+
+- Gestión de perfil del usuario
+
+- Navegación general de la interfaz
+
+- Interacción con botones, tarjetas e iconografía
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+- Integración con refrigeradores inteligentes (Smart Fridges)
+
+- Flujo completo Premium (estadísticas avanzadas y recetas exclusivas)
+
+- Funcionalidades del dispositivo físico (sensor)
+
+### TABLA DE ESCALA DE SEVERIDAD
+
+| Nivel | Descripción                                                                                                                                         |
+|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1** | Problema superficial: puede ser superado fácilmente o ocurre con poca frecuencia. No necesita ser arreglado salvo que haya tiempo disponible.       |
+| **2** | Problema menor: ocurre más frecuentemente o es algo más difícil para el usuario. Recomendado arreglarlo en un siguiente release con baja prioridad. |
+| **3** | Problema mayor: ocurre frecuentemente o el usuario no puede resolverlo. Se debe corregir con prioridad alta.                                        |
+| **4** | Problema muy grave: impide al usuario continuar. Debe corregirse antes del lanzamiento.                                                             |
+
+
+### TABLA RESUMEN DE PROBLEMAS
+
+| #  | Problema identificado                                          | Severidad | Heurística / Principio violado                   |
+|----|----------------------------------------------------------------|-----------|--------------------------------------------------|
+| 1  | Baja legibilidad e interfaz poco clara | 2         | Information Architecture – Is it understandable?           |
+| 2  | Falta de funcionamiento sin internet                    | 2         | Inclusive Design – Experiencias comparables      |
+| 3  | Alertas y notificaciones poco optimizadas         | 3         | Usability – Reconocimiento mejor que recuerdo    |
+| 4  | Falta de claridad sobre sensores y tecnología     | 3         | Usability – Visibilidad del estado del sistema   |
+| 5  | Necesidad de mayor personalización en funciones          | 3         | Usability – Señalización y prioridades           |
+| 6  | Interfaz podría mejorar en claridad del flujo            | 2         | Information Architecture – Is it understandable? |
+
+
+
+## Problema #1 – Baja legibilidad e interfaz poco clara
+
+**Severidad:** 2
+Heurística violada: Usability – Visibilidad del contenido y legibilidad
+
+**Problema:**
+Dos usuarias (Melissa y Gladys) indicaron que algunos textos y elementos visuales son poco legibles, dificultando el uso fluido de la aplicación.
+
+**Recomendación:**
+Aumentar contraste, tamaño de fuente y jerarquía visual. Aplicar lineamientos de accesibilidad (WCAG AA).
+
+## Problema #2 – Falta de funcionamiento sin internet
+
+**Severidad:** 3
+Heurística violada: Inclusive Design – Disponibilidad y acceso equitativo
+
+**Problema:**
+Gladys señaló que la aplicación necesita funcionar sin conexión porque en su entorno laboral no siempre dispone de internet. Esta limitación afecta a quienes gestionan inventario en zonas con mala conectividad.
+
+**Recomendación:**
+Implementar modo offline con sincronización en segundo plano.
+
+## Problema #3 – Alertas y notificaciones poco optimizadas
+
+**Severidad:** 2
+Heurística violada: Usability – Feedback oportuno y relevante
+
+**Problema:**
+Las alertas de vencimiento o stock son útiles, pero las entrevistadas (especialmente Gladys y Rosa) requieren que sean más claras, visibles y configurables.
+
+**Recomendación:**
+Permitir personalización de notificaciones, mejorar diseños y priorización de alertas críticas.
+
+## Problema #4 – Falta de claridad sobre sensores y tecnología
+
+**Severidad:** 1
+Heurística violada: Usability – Ayuda y documentación clara
+
+**Problema:**
+Melissa mostró sorpresa y falta de comprensión respecto a cómo funcionan los sensores que miden frescura, lo que indica una brecha de comunicación.
+
+**Recomendación:**
+Agregar una sección educativa simple (tooltip, pop-up o tutorial) explicando la tecnología de detección.
+
+## Problema #5 – Necesidad de mayor personalización en funciones
+
+**Severidad:** 2
+Heurística violada: Usability – Control y libertad del usuario
+
+**Problema:**
+Usuarios de negocios (Vanessa y Rosa) necesitan personalizar inventarios, alertas, reportes y flujos específicos. La app no cubre completamente estas necesidades avanzadas.
+
+**Recomendación:**
+Habilitar configuraciones personalizadas para negocios, como filtros, categorías y dashboards dinámicos.
+
+## Problema #6 – Interfaz podría mejorar en claridad del flujo
+
+**Severidad:** 1
+Heurística violada: Usability – Correspondencia entre el sistema y el mundo real
+
+**Problema:**
+Si bien Vanessa y Rosa no reportaron confusión, el comentario sobre “flujo profesional pero mejorable” sugiere una necesidad subyacente de simplificar procesos y mejorar lógica de navegación.
+
+**Recomendación:**
+Optimizar los flujos de usuario, reorganizando pasos críticos como registro, inventario y reportes.
+
+# 5.4. Video About-the-Product
+
+El siguiente video forma parte de la documentación del proyecto y tiene como propósito complementar la explicación escrita con una demostración visual del proceso desarrollado. En él se presenta de manera clara y sintetizada el funcionamiento, las características principales y los pasos realizados durante la implementación, ofreciendo un apoyo adicional para la comprensión del trabajo expuesto.
+
+Link OneDrive:  https://upcedupe-my.sharepoint.com/:f:/g/personal/u202211706_upc_edu_pe/IgD8apWOBNMlR58eqC4TIeHOAdQi0LeXLv-8dpF5IiLFwAk?e=B1fvLc
+
+<br> Link Youtube: https://youtu.be/J4Lr-Iov4jM
+
+![imagen Video](assets/Mejoras1.png)
+
+# 5.5. Video About-the-Team
+
+A continuación se presenta el video about the team en el cual los colaboradores del grupo 4 - SenseEat, presentan sus testimonios con respecto al trabajo llevado a lo largo del ciclo, las metas cumplidas y outcomes.
+
+Link a video:
+https://drive.google.com/file/d/1ZxY1NtuRBORlU94j854S1Y7_zggEqN77/view?usp=sharing
+
+# Conclusiones
+- El desarrollo del proyecto FreshSense, producto de la startup *SenseEat*, permitió aplicar de manera integral los conocimientos adquiridos para el landing page en el curso de Desarrollo de Aplicaciones Open Source. 
+
+- A través de la identificación de problemas relacionados con el desperdicio de alimentos y la necesidad de una gestión eficiente de la frescura, se diseñó una solución tecnológica basada en sensores inteligentes con una paginas web para su control.  
+
+- Durante el proceso se implementaron metodologías ágiles que facilitaron la organización del equipo y la priorización de tareas.
+
+- El trabajo en equipo fue esencial para cumplir los objetivos planteados. La colaboración mediante GitHub, las revisiones cruzadas de código y la comunicación constante aseguraron la calidad del producto. Además, se generó documentación técnica y de servicios que facilitará la continuidad del proyecto en futuros ciclos de desarrollo.  
+
+- FreshSense representa un avance hacia soluciones innovadoras para el sector alimentario, alineadas con los Objetivos de Desarrollo Sostenible (ODS), contribuyendo a la reducción del desperdicio y promoviendo un consumo más responsable mediante la tecnología.
+
+# Bibliografía
+
+- Beck, K., & Fowler, M. (2000). *Planning Extreme Programming*. Addison-Wesley.  
+- Cockburn, A. (2002). *Agile Software Development*. Addison-Wesley.  
+- Evans, E. (2004). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley.  
+- Fowler, M. (2003). *Patterns of Enterprise Application Architecture*. Addison-Wesley.  
+- Sommerville, I. (2011). *Software Engineering* (9th ed.). Addison-Wesley.
+- Organización de las Naciones Unidas. (2015). *Objetivos de Desarrollo Sostenible*. Disponible en: [https://www.un.org/sustainabledevelopment/es/](https://www.un.org/sustainabledevelopment/es/)
+
+# Anexos
+
+Video exposición: https://upcedupe-my.sharepoint.com/:f:/g/personal/u202211706_upc_edu_pe/IgCMAQxYOyhyRoiJuyrxY54wAbwhrydrzC6QBOx6ggkUdF4?e=ooNYAK
+
+video about the product: https://youtu.be/J4Lr-Iov4jM
